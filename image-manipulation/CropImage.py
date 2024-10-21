@@ -7,7 +7,7 @@ from FileOs import FileOs
 import os
 
 class CropImage:
-    
+
     def __init__(self, fileObject, output_folder):
         self.fileObject = fileObject
         self.output_folder = output_folder
@@ -54,24 +54,22 @@ class CropImage:
 if __name__ == '__main__':
     ## generic params
     output_folder = 'weapons/images/'
+    if not os.path.exists(output_folder):
+        print("Creating output folder: " + output_folder)
+        os.makedirs(output_folder)
     fileObject = FileOs("__test_source/")
     cropImage = CropImage(fileObject, output_folder=output_folder)
-    
+
     ## local testing
     image = fileObject.read_image_file("DwJ6vxHUUAARYrH.jpg")
     cropped = cropImage.crop_out_black_bars(image)
     cropped.show()
     image.show()
-    
+
     ## S3 testing
     # fileObject = FileS3("dark-cloud-bucket-dev")
-    
+
     # source_key = 'weapons/images/Goro_Last_Judgment_Side1.jpg'
     # upload_key = cropImage.get_thumbnail_name(source_key=source_key)
-    
+
     # cropImage.crop_and_upload_thumbnail(source_key=source_key, upload_key=upload_key)
-
-
-    
-    
-
