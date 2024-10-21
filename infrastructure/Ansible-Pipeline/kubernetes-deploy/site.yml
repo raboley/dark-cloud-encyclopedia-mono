@@ -1,0 +1,9 @@
+---
+# This playbook deploys a simple kubeadm install.
+- name: Deploy App
+  remote_user: "{{ ansible_remote_user }}"
+  hosts: master
+  become: yes
+  become_method: sudo
+  roles:
+    - deploy_app

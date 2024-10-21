@@ -1,0 +1,50 @@
+FROM ubuntu:16.04
+MAINTAINER Russell
+
+## Install pre-requisite packages
+RUN apt-get update 
+RUN apt-get install -y libssl-dev libffi-dev python-dev python-pip
+RUN pip install cryptography==2.4.2
+## Install Ansible and Azure SDKs via pip
+RUN pip install ansible[azure]
+
+## Configure Ansible
+
+
+
+# RUN "echo installing ansible"
+# RUN pip install ansible
+RUN { echo '[defaults]'; echo 'roles_path = ../'; echo 'invalid_task_attribute_failed=false'; } >> ansible.cfg
+RUN mkdir -p /etc/ansible
+#RUN touch /etc/ansible/hosts
+COPY hosts /etc/ansible/
+# "echo -e '[local]\nlocalhost ansible_connection=local' | tee -a /etc/ansible/hosts > /dev/null"
+RUN mkdir -p conf
+# RUN ansible-galaxy install -r requirements.yml
+
+#RUN ansible-playbook site.yml
+#RUN ansible-playbook -i inventory -u ubuntu --private-key $SYSTEM_DEFAULTWORKINGDIRECTORY/_Ansible-Pipeline/kubernetes-deploy/terraform.pem --ssh-extra-args='-o StrictHostKeyChecking=no' site.yml 
+
+
+COPY . /playbook
+WORKDIR /playbook
+RUN chmod 600 terraform.pem
+
+RUN ansible-playbook site.yml --syntax-check
+RUN export ANSIBLE_INVALID_TASK_ATTRIBUTE_FAILED=False
+
+# CMD [ "ansible", "--version" ]
+CMD ["ansible-playbook", "-i", "inventory", "-u", "ubuntu", "--private-key", "terraform.pem", "--ssh-extra-args='-o strictHostKeyChecking=no'", "site.yml"]
+
+# export ANSIBLE_INVALID_TASK_ATTRIBUTE_FAILED=False
+# "echo installing ansible"
+# pip install ansible
+# "{ echo '[defaults]'; echo 'roles_path = ../'; echo 'invalid_task_attribute_failed=false'; } >> ansible.cfg"
+# mkdir -p /etc/ansible
+# touch /etc/ansible/hosts
+# # "echo -e '[local]\nlocalhost ansible_connection=local' | tee -a /etc/ansible/hosts > /dev/null"
+# mkdir -p conf
+# ansible-galaxy install -r requirements.yml
+# ansible-playbook site.yml --syntax-check
+# ansible-playbook site.yml
+# ansible-playbook -i inventory -u ubuntu --private-key terraform.pem --ssh-extra-args='-o StrictHostKeyChecking=no' site.yml 

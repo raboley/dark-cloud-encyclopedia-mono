@@ -1,0 +1,74 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: hello-svc
+  labels:
+    app: hello-world
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    nodePort: 30001
+    protocol: TCP
+  selector:
+    app: hello-world
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: flask-handler
+  name: flask-handler
+spec:
+  ports:
+  - port: 5001
+    protocol: TCP
+    targetPort: 5001
+  selector:
+    run: flask-handler
+  type: LoadBalancer
+status:
+  loadBalancer: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: flask-books
+  name: flask-books
+spec:
+  ports:
+  - port: 5000
+    protocol: TCP
+    targetPort: 5002
+  selector:
+    run: flask-books
+  type: LoadBalancer
+status:
+  loadBalancer: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: find-tweets
+  name: find-tweets
+spec:
+  ports:
+  - port: 5000
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    run: find-tweets
+  type: NodePort
+status:
+  loadBalancer: {}

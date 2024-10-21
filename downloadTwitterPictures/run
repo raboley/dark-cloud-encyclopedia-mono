@@ -1,0 +1,14 @@
+#!/bin/bash
+docker image build -t downloadtwitterpictures:latest .
+docker container run -it --rm downloadtwitterpictures:latest --username  NASA --num 10 --replies --retweets
+docker container run -it downloadtwitterpictures:latest --username Cloud_images --num 10 --replies --retweets
+docker exec -it downloadtwitterpictures:latest /bin/bash
+
+docker run busybox nslookup google.com
+
+# setting up thing to upload to S3 bucket
+aws configure
+AWS Access Key ID [None]: input your access key
+AWS Secret Access Key [None]: input your secret access key
+Default region name [None]: input your region
+Default output format [None]: json

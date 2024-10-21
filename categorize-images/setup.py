@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+
+# Learn more: https://github.com/russellboley/setup.py
+
+from setuptools import setup, find_packages
+
+
+with open('README.rst') as f:
+    readme = f.read()
+
+with open('LICENSE') as f:
+    license = f.read()
+
+setup(
+    name='categorize',
+    version='0.1.0',
+    description='categorize package for Python-Guide.org',
+    long_description=readme,
+    author='Russell Boley',
+    author_email='me@russellboley.com',
+    url='https://github.com/russellboley/categorizemod',
+    license=license,
+    packages=find_packages(exclude=('tests', 'docs'))
+)
+

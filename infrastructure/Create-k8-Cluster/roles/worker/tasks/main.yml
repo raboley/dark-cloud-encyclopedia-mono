@@ -1,0 +1,9 @@
+---
+- name: Reset kubeadm before init in case this is not the first run
+  command: kubeadm reset --force
+  when: kubeadm_reset_before_init
+
+- name: kubeadm join with pre generated token
+  command: kubeadm join --token {{ kubeadm_token }} {{ master_ip }}:6443 --discovery-token-unsafe-skip-ca-verification
+# bd85f7.cff657b31b20eed5
+# kubeadm join --token bd85f7.cff657b31b20eed5 52.34.9.127:6443 --discovery-token-unsafe-skip-ca-verification

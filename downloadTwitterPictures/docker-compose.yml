@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  downloadtwitterpictures:
+    image: downloadtwitterpictures
+    build: .
+    ports:
+      - 4000:4000

@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  downloadtwitterpictures:
+    image: downloadtwitterpictures
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4000:4000

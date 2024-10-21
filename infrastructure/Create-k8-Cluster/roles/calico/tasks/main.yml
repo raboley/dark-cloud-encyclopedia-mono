@@ -1,0 +1,9 @@
+---
+# - name: Install Calico pt 1
+#   command: "kubectl apply -f https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml"
+
+# - name: Install Calico pt 2
+#   command: "kubectl apply -f https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml"
+
+- name: Install weaver
+  command: "kubectl apply --filename https://git.io/weave-kube-1.6"

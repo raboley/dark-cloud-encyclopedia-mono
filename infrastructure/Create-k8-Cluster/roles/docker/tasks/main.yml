@@ -1,0 +1,21 @@
+---
+
+- name: install docker
+  apt: package={{ item }} update_cache=yes
+  with_items:
+    - docker.io
+
+- name: add remote user to group docker
+  command: usermod -aG docker {{ansible_user}}
+
+- name: Start docker service
+  service:
+    name: docker
+    state: restarted
+    enabled: yes
+  
+# This is needed based on Docker 1.13 update. Kubernetes and/or CNI could also fix this.  
+- name: Re-enable ipchains FORWARD
+  iptables:
+    chain: FORWARD
+    policy: ACCEPT
