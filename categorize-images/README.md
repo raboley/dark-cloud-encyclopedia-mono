@@ -10,8 +10,21 @@ make init
 
 # Function Flow
 
-1. Read in the image from the input folder using [read_text_from_image.py](categorize/read_text_from_image.py)
-This should output named images in the output folder
+To run this, ve in the categorize-images directory, and run
+
+```shell
+uv run main.py
+```
+
+The exection start is in `main.py` where we read the images from the `all_images/input/` directory. In there should be a directory in the pattern <CharacterName>_<WeaponName> with all the weapon images in there.
+*note these should be proper casing e.g. Toan_Chronicle 2 spaces are okay*
+
+1.Categorize the image types
+
+The first step is to categorize the images, this takes a helping hand from the folder naming schema, and then corrects any character or weapon name misspelling.
+
+To ensure everything worked right you can copy from the output directory, just the files (no folders) to the `src/api/weapons/images` directory of the [dark-cloud-website](https://gitlab.com/russell_boley/dark-cloud-website.git)
+project. After there it should show up in the details page of the website (not thumbnails yet)
 
 # Output
 
@@ -62,5 +75,5 @@ python3 generate_tree.py --only-missing
 └── Hercule's Wrath ❌
 Osmond
 ├── Machine Gun ❌
-├── Snail ❌ 
+├── Snail ❌
 ```

@@ -33,6 +33,7 @@ if __name__ == '__main__':
             original_weapon_name = imageDirectory.split("_")[1].split(".")[0]
             corrected_character_name = correct_character_name(original_character_name, characters)
             corrected_weapon_name = correct_weapon_name(original_weapon_name, weapons)
+            corrected_weapon_name = corrected_weapon_name.replace(" ", "_")
 
             # 1. Read the text of an image
             input_path = input_folder + imageDirectory + "/" + image
