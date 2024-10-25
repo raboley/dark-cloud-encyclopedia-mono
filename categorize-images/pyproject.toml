@@ -1,0 +1,14 @@
+[project]
+name = "categorize-images"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "<3.13,>=3.12"
+dependencies = [
+    "boto3>=1.35.48",
+    "easyocr>=1.7.2",
+    "fuzzywuzzy>=0.18.0",
+    "pillow>=11.0.0",
+    "torch>=2.5.0",
+    "torchvision>=0.20.0",
+]

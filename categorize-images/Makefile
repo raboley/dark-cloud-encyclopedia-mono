@@ -13,3 +13,6 @@ deploy-prod:
 	serverless deploy --stage prod --alias prod
 	sls s3deploy --stage prod
 	aws s3 cp all_weapons.json s3://dark-cloud-bucket-prod/mappings/
+
+get-missing-weapons:
+	uv run generate_tree.py --only-missing

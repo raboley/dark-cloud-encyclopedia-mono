@@ -4,8 +4,14 @@ This will read images and and categorize images based on the text on the picture
 
 # Local setup
 
-brew install tesseract
+```
+make init
+```
 
+# Function Flow
+
+1. Read in the image from the input folder using [read_text_from_image.py](categorize/read_text_from_image.py)
+This should output named images in the output folder
 
 # Output
 

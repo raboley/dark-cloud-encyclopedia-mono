@@ -1,14 +1,9 @@
 import json
 import difflib
 from .find_in_json import find_value_by_id, has_text, get_json
+from .image_text_decider import image_is_weapon_stat_screen
 
 
-def image_is_weapon_stat_screen(source_text):
-    if has_text(source_text=source_text, find_text='ATTACHMENT'):
-        return True
-    else:
-        return False
-        
 def get_weapon_name(source_text, id=4, weapon_list='', source_name=''):
     ids_to_check = [4,3,5,2,6,1,7]
     no_valid_weapon_name_error = 'Couldnt find a valid weapon name in: "'+ source_name + '" from any of these: '
@@ -36,7 +31,7 @@ def determine_character(weapon_name, weapon_map_json):
 
 def write_weapon_map_to_file(parent_folder, weapon_name, pair):
     pair.set_pair(parent_folder, weapon_name)
-    
+
 def get_final_file_name():
     pass
         #image_type = 'weapon_stat_screen'
