@@ -1,4 +1,6 @@
 nose
 sphinx
-boto3
+
 Flask
+pytesseract
+Pillow

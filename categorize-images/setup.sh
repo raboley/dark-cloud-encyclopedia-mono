@@ -1,8 +1,10 @@
 #!/bin/bash
 
+brew install tesseract
+
 # Create and initialize a Python Virtual Environment
 echo "Creating virtual env - env"
-python3 -m virtualenv env
+python3 -m venv env
 
 echo "sourcing virtual env - env"
 source env/bin/activate
