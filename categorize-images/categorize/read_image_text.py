@@ -1,29 +1,31 @@
 ## read the text in the picture pictures/Ruby_Goddess_Ring-Main.jpg
 
-import pytesseract
+import easyocr
 from PIL import Image
 
 def read_text_from_image(image_path):
     """
-    Reads text from an image using Tesseract OCR.
+    Reads text from an image using EasyOCR.
 
     :param image_path: Path to the image file.
     :return: Extracted text from the image.
     """
     try:
-        # Open the image file
-        img = Image.open(image_path)
+        # Initialize the EasyOCR reader
+        reader = easyocr.Reader(['en'])  # Specify the languages you want to use
 
-        # Use pytesseract to do OCR on the image
-        text = pytesseract.image_to_string(img)
+        # Read the text from the image
+        result = reader.readtext(image_path)
 
-        return text
+        # Extract the text from the result
+        extracted_text = " ".join([text[1] for text in result])
+        
+        return extracted_text
     except Exception as e:
         return str(e)
 
 if __name__ == '__main__':
     images = ['pictures/Ruby_Goddes_Ring-Main.jpg', 'pictures/Ruby_Crystal_Ring_Side1.jpg', "pictures/Toan_Choora_Stats.jpg", "pictures/Ruby_Crystal_Ring_Stats.jpg"]
-    # image_path = 'pictures/Ruby_Goddes_Ring-Main.jpg'
     for image_path in images:
         print("-------------------------------------")
         print("Reading text from image:", image_path)
