@@ -1,6 +1,7 @@
 import os
 import json
 import argparse
+from fuzzywuzzy import process
 
 def load_json(file_path):
     with open(file_path, 'r') as file:
@@ -15,13 +16,31 @@ def generate_tree(weapons_data, directories, only_missing=False):
         character = weapon['characterName']
         weapon_name = weapon['weaponName']
         folder_name = f"{character}_{weapon_name}"
-        exists = folder_name in directories
+        exists = weapon_exists(folder_name, directories)
         if only_missing and exists:
             continue
         if character not in tree:
             tree[character] = []
         tree[character].append((weapon_name, exists))
     return tree
+
+def weapon_exists(folder_name, directories):
+    if folder_name in directories:
+        return True
+
+    if fuzzy_match(folder_name, directories)[1] > 90:
+        return True
+
+    return False
+
+def find_unmatched_folders(weapons_data, directories):
+    weapon_folders = {f"{weapon['characterName']}_{weapon['weaponName']}" for weapon in weapons_data}
+    unmatched_folders = [folder for folder in directories if folder not in weapon_folders]
+    return unmatched_folders
+
+def fuzzy_match(folder_name, weapon_folders):
+    match, score = process.extractOne(folder_name, weapon_folders)
+    return match, score
 
 def print_tree(tree):
     for character, weapons in tree.items():
@@ -34,9 +53,21 @@ def print_tree(tree):
             status = "✔️" if exists else "❌"
             print(f"  {prefix} {weapon} {status}")
 
+def print_unmatched_folders(unmatched_folders, weapon_folders):
+    print("Unmatched Folders:")
+    for i, folder in enumerate(unmatched_folders):
+        if i == len(unmatched_folders) - 1:
+            prefix = "└──"
+        else:
+            prefix = "├──"
+        match, score = fuzzy_match(folder, weapon_folders)
+        if score < 90:
+            print(f"  {prefix} {folder} (Best Match: {match} with score {score}) ❌")
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Generate a tree structure of weapons and their presence in directories.")
     parser.add_argument('--only-missing', action='store_true', help="Show only missing weapons")
+    parser.add_argument('--only-unmatched', action='store_true', help="Show only unmatched folders")
     args = parser.parse_args()
 
     json_file_path = 'categorize/data/all_weapons.json'
@@ -44,5 +75,12 @@ if __name__ == '__main__':
 
     weapons_data = load_json(json_file_path)
     directories = list_directories(input_dir_path)
-    tree = generate_tree(weapons_data, directories, only_missing=args.only_missing)
-    print_tree(tree)
+
+    weapon_folders = {f"{weapon['characterName']}_{weapon['weaponName']}" for weapon in weapons_data}
+
+    if args.only_unmatched:
+        unmatched_folders = find_unmatched_folders(weapons_data, directories)
+        print_unmatched_folders(unmatched_folders, weapon_folders)
+    else:
+        tree = generate_tree(weapons_data, directories, only_missing=args.only_missing)
+        print_tree(tree)
