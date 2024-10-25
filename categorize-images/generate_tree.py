@@ -35,12 +35,20 @@ def weapon_exists(folder_name, directories):
 
 def find_unmatched_folders(weapons_data, directories):
     weapon_folders = {f"{weapon['characterName']}_{weapon['weaponName']}" for weapon in weapons_data}
-    unmatched_folders = [folder for folder in directories if folder not in weapon_folders]
+    unmatched_folders = [folder for folder in directories if not weapon_exists(folder, weapon_folders)]
     return unmatched_folders
 
 def fuzzy_match(folder_name, weapon_folders):
     match, score = process.extractOne(folder_name, weapon_folders)
     return match, score
+
+def correct_character_name(character_name, characters):
+    match, score = process.extractOne(character_name, characters)
+    return match if score > 90 else character_name
+
+def correct_weapon_name(weapon_name, weapons):
+    match, score = process.extractOne(weapon_name, weapons)
+    return match if score > 90 else weapon_name
 
 def print_tree(tree):
     for character, weapons in tree.items():
@@ -77,6 +85,8 @@ if __name__ == '__main__':
     directories = list_directories(input_dir_path)
 
     weapon_folders = {f"{weapon['characterName']}_{weapon['weaponName']}" for weapon in weapons_data}
+    characters = {weapon['characterName'] for weapon in weapons_data}
+    weapons = {weapon['weaponName'] for weapon in weapons_data}
 
     if args.only_unmatched:
         unmatched_folders = find_unmatched_folders(weapons_data, directories)
