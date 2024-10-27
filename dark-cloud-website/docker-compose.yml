@@ -13,7 +13,7 @@ services:
     container_name: nginx-angular
     image: raboley/nginx-angular
     build:
-      context: .
+      context: ""
       dockerfile: nginx.dockerfile
     volumes:
       - ./dist:/usr/share/nginx/html

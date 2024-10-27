@@ -14,7 +14,7 @@ services:
     container_name: nginx-angular
     image: nginx-angular
     build:
-      context: .
+      context: ""
       dockerfile: nginx.prod.dockerfile
     ports:
       - "80:80"
