@@ -29,8 +29,8 @@ def crop_side_image_to_thumbnail(image):
     return cropped_img
 
 def get_thumbnail_name(file_name):
-    replace_string = 'Side1.jpeg'
-    thumbnail_string = 'Thumbnail.jpeg'
+    replace_string = 'Side1.jpg'
+    thumbnail_string = 'Thumbnail.jpg'
     thumbnail_name = file_name.replace(replace_string, thumbnail_string)
     return thumbnail_name
 
@@ -45,11 +45,12 @@ def process_images(input_folder, output_folder):
 
             # Crop out black bars and save the image
             cropped_image = crop_out_black_bars(image)
+
             cropped_image.save(output_path)
             print(f"Saved cropped image: {output_path}")
 
             # If the image ends with 'Side1.jpeg', create a thumbnail
-            if file_name.endswith('Side1.jpeg'):
+            if file_name.endswith('Side1.jpg'):
                 thumbnail_image = crop_side_image_to_thumbnail(image)
                 thumbnail_name = get_thumbnail_name(file_name)
                 thumbnail_path = os.path.join(output_folder, thumbnail_name)

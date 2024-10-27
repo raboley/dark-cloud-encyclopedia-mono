@@ -1,8 +1,5 @@
 from PIL import Image
-import boto3
 from io import StringIO, BytesIO
-import requests
-from FileS3 import FileS3
 from FileOs import FileOs
 import os
 
@@ -52,24 +49,14 @@ class CropImage:
         return upload_key
 
 if __name__ == '__main__':
+    input_folder = '../categorize-images/all_images/output'
+    output_folder = 'output'
     ## generic params
-    output_folder = 'weapons/images/'
-    if not os.path.exists(output_folder):
-        print("Creating output folder: " + output_folder)
-        os.makedirs(output_folder)
-    fileObject = FileOs("__test_source/")
     cropImage = CropImage(fileObject, output_folder=output_folder)
 
     ## local testing
-    image = fileObject.read_image_file("DwJ6vxHUUAARYrH.jpg")
+    image = fileObject.read_image_file("Ungaga_5_Foot_Nail_Side1.jpeg")
+    image.show()
+    
     cropped = cropImage.crop_out_black_bars(image)
     cropped.show()
-    image.show()
-
-    ## S3 testing
-    # fileObject = FileS3("dark-cloud-bucket-dev")
-
-    # source_key = 'weapons/images/Goro_Last_Judgment_Side1.jpg'
-    # upload_key = cropImage.get_thumbnail_name(source_key=source_key)
-
-    # cropImage.crop_and_upload_thumbnail(source_key=source_key, upload_key=upload_key)
