@@ -3,7 +3,7 @@ import os
 
 # Define input and output folders
 input_folder = '../categorize-images/all_images/output'
-output_folder = '../dark-cloud-website/src/api/weapons/images'
+output_folder = '../dark-cloud-website/src/api/weapons/images/'
 
 # Create output folder if it doesn't exist
 if not os.path.exists(output_folder):
