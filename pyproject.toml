@@ -1,0 +1,13 @@
+[tool.pyright]
+venvPath = "."
+venv = "venv"
+
+[tool.uv.workspace]
+members = ["image-manipulation", "categorize-images"]
+[project]
+name = "dark-cloud-encyclopedia"
+version = "0.1.0"
+dependencies = [
+    "requests>=2.32.3",
+]
+

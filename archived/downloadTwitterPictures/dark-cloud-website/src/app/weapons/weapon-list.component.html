@@ -1,0 +1,68 @@
+<div class='card'>
+  <div class='card-header'>
+    {{pageTitle}}
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-2'>Filter by:</div>
+      <div class='col-md-4'>
+        <input type='text'
+               [(ngModel)]='listFilter' />
+      </div>
+    </div>
+    <div class='row'
+         *ngIf='listFilter'>
+      <div class='col-md-6'>
+        <h4>Filtered by: {{listFilter}}</h4>
+      </div>
+    </div>
+    <div class='table-responsive'>
+      <table class='table'
+             *ngIf='weapons && weapons.length'>
+        <thead>
+          <tr>
+            <th>
+              <button class='btn btn-primary'
+                      (click)='toggleImage()'>
+                {{showImage ? 'Hide' : 'Show'}} Image
+              </button>
+            </th>
+            <th>Weapon</th>
+            <th>Character</th>
+            <th>tier</th>
+            <th>Price</th>
+            <th>5 Star Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let weapon of filteredWeapons'>
+            <td>
+              <img *ngIf='showImage'
+                   [src]='weaponUrlRoot + weapon.weaponThumbnail'
+                   [title]='weapon.weaponThumbnail'
+                   [style.width.px]='imageWidth'
+                   [style.margin.px]='imageMargin'>
+            </td>
+            <td>
+              <a [routerLink]="['/weapons', weapon.weaponId]">
+                {{ weapon.weaponName }}
+              </a>
+            </td>
+            <td>{{ weapon.characterName}}</td>
+            <td>{{ weapon.tier }}</td>
+            <td>{{ weapon.price | currency:'USD':'symbol':'1.2-2' }}</td>
+            <td>
+              <pm-star [rating]='weapon.starRating'
+                       (ratingClicked)='onRatingClicked($event)'>
+              </pm-star>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div *ngIf='errorMessage'
+     class='alert alert-danger'>
+  Error: {{ errorMessage }}
+</div>

@@ -1,0 +1,14 @@
+version: "3"
+
+tasks:
+  categorize-images:
+    desc: Categorize Images in the directory 'categorize-images/all_images/input'
+    cmds:
+      - uv run main.py
+    dir: categorize-images
+
+  crop-images:
+    desc: Crop images in 'categorize-images/all_images/output'
+    cmds:
+      - uv run main.py
+    dir: image-manipulation

@@ -1,0 +1,1753 @@
+[
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Dagger",
+      "Tier": 0,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Baselard",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Crysknife",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Gladius",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Kitchen Knife",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Bone Rapier",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Buster Sword",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "Yes",
+        "Gift": "Yes",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Chopper",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Sand Breaker",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Sax",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Serpent Sword",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "Yes",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Small Sword",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Shamshir",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Antique Sword",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Choora",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Claymore",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Dusack",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Evilcise",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Macho Sword",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "Yes",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Tsukikage",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Wise Owl Sword",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "7 Branch Sword",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Aga's Sword",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Brave Ark",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Cross Hinder",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Drain Seeker",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Heavens's Cloud",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Lamb's Sword",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Maneater",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Mardan Eins",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Sun Sword",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "Yes",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Atlamilla Sword",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Big Bang",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Dark Cloud",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Mardan Twei",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "7th Heaven",
+      "Tier": 6,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Arise Mardan",
+      "Tier": 6,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Chronicle 2",
+      "Tier": 6,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "Yes",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Chronicle Sword",
+      "Tier": 6,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Toan",
+      "Weapon Name": "Sword Of Zeus",
+      "Tier": 6,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Wooden Slingshot",
+      "Tier": 0,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Bandit Slingshot",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Bone Slingshot",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Steel Slingshot",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Flamingo",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Hardshooter",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Double Impact",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "Yes",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Dragon's Y",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Matador",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Divine Beast Title",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Angel Shooter",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Steve",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "Yes",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Angel Gear",
+      "Tier": 6,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Xiao",
+      "Weapon Name": "Super Steve",
+      "Tier": 6,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Mallet",
+      "Tier": 0,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Frozen Tuna",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "",
+        "Gift": "Yes",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Steel Hammer",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Big Bucks Hammer",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "Yes",
+        "Buy": "Yes",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Plate Hammer",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Trial Hammer",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Turtle Shell",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "Yes",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Battle Axe",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "Yes",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Magical Hammer",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Gaia Hammer",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Last Judgment",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "Yes",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Satan's Ax",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Inferno",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Goro",
+      "Weapon Name": "Tall Hammer",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Gold Ring",
+      "Tier": 0,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Thorn Armlet",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Bandit's Ring",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Platinum Ring",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "",
+        "Demon Shaft": "Yes",
+        "Gift": "Yes",
+        "Buy": "Yes",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Crystal Ring",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Pockleful",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "Yes",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Fairy's Ring",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Goddess's Ring",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Athena's Armlet",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Destruction Ring",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Satan's Ring",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Mobius Ring",
+      "Tier": 6,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ruby",
+      "Weapon Name": "Secret Armlet",
+      "Tier": 6,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "Fighting Stick",
+      "Tier": 0,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "5 ft. Nail",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "Halberd",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "Javelin",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "De Sanga",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "Yes",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "Partisan",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "Scorpion",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "Cactus",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "Mirage",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "Yes",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "Terra Sword",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "Babel's Spear",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "",
+        "Buy": "",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Ungaga",
+      "Weapon Name": "Hercule's Wrath",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "",
+        "Buy": "",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Osmond",
+      "Weapon Name": "Machine Gun",
+      "Tier": 0,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Osmond",
+      "Weapon Name": "Jackal",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Osmond",
+      "Weapon Name": "Snail",
+      "Tier": 1,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "No"
+      }
+    },
+    {
+      "Character Name": "Osmond",
+      "Weapon Name": "Blessing Gun",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "Yes",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Osmond",
+      "Weapon Name": "Swallow",
+      "Tier": 2,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "Yes",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Osmond",
+      "Weapon Name": "Skunk",
+      "Tier": 3,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Osmond",
+      "Weapon Name": "Hexa Blaster",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Osmond",
+      "Weapon Name": "G Crusher",
+      "Tier": 4,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "Yes",
+        "Demon Shaft": "Yes",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Osmond",
+      "Weapon Name": "Star Breaker",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    },
+    {
+      "Character Name": "Osmond",
+      "Weapon Name": "Supernova",
+      "Tier": 5,
+      "Obtained From": {
+          "Divine Beast Cave": "",
+        "Wise Owl Forest": "",
+        "Shipwreck": "",
+        "Sun and Moon Temple": "",
+        "Moon Sea": "",
+        "Gallerty of Time": "",
+        "Demon Shaft": "",
+        "Gift": "No",
+        "Buy": "No",
+        "Evolution": "Yes"
+      }
+    }
+  ]

@@ -1,0 +1,30 @@
+FROM lambci/lambda:build-python3.6 as pythonLambda
+ENV AWS_DEFAULT_REGION us-west-2
+
+# COPY . .
+
+# RUN npm install
+
+# # Assumes you have a .lambdaignore file with a list of files you don't want in your zip
+# RUN cat .lambdaignore | xargs zip -9qyr lambda.zip . -x
+
+# CMD aws lambda update-function-code --function-name mylambda --zip-file fileb://lambda.zip
+
+# docker build -t mylambda .
+# docker run --rm -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY mylambda
+
+FROM pythonLambda
+LABEL author="Russell Boley"
+WORKDIR /app
+COPY . .
+#RUN sudo yum install nodejs nodejs-npm
+RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
+RUN . ~/.nvm/nvm.sh
+RUN nvm install 4.4.5
+#RUN sudo chown -R $USER:$(id -gn $USER) /root/.config
+RUN npm install -g serverless
+RUN serverless plugin install -n serverless-python-requirements
+RUN npm install serverless-plugin-existing-s3
+RUN serverless config credentials -p aws -k REDACTED -s REDACTED
+#ENTRYPOINT ["serverless deploy"]
+#"/bin/bash","-c",

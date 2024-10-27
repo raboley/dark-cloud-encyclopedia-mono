@@ -1,0 +1,15 @@
+- name: Copy deploy YAML to host
+  template:
+    src: deploy.yaml
+    dest: /tmp/deploy.yaml
+
+- name: Deploying deploy application
+  command: "kubectl --kubeconfig /etc/kubernetes/admin.conf apply -f /tmp/deploy.yaml"
+
+- name: Copy service YAML to host
+  template:
+    src: service.yaml
+    dest: /tmp/service.yaml
+
+- name: Deploying service application
+  command: "kubectl --kubeconfig /etc/kubernetes/admin.conf apply -f /tmp/service.yaml"
