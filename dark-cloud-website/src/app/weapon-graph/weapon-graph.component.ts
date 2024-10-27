@@ -11,8 +11,9 @@ export class WeaponGraphComponent  {
   name = 'Angular 5';
   hierarchialGraph = {nodes: [], links: []}
   curve = shape.curveBundle.beta(1);
-  weaponUrlRoot: string = 'https://s3-us-west-2.amazonaws.com/dark-cloud-bucket-dev/weapons/images/';
-  // curve = shape.curveLinear;
+  weaponUrlRoot: string = './api/weapons/images/';
+  // weaponUrlRoot: string = 'https://s3-us-west-2.amazonaws.com/dark-cloud-bucket-dev/weapons/images/';
+  // curve = shape.curveLinear;kk
 
   public ngOnInit():void {
     this.showGraph();

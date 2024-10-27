@@ -10,7 +10,7 @@ RUN npm run build -- --prod
 ##### Stage 2
 FROM nginx:alpine
 VOLUME /var/cache/nginx
-COPY config/nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./config/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=node /app/dist/APM /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
 

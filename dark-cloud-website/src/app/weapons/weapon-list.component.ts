@@ -13,7 +13,8 @@ export class WeaponListComponent implements OnInit {
   imageMargin = 2;
   showImage = true;
   errorMessage = '';
-  weaponUrlRoot: string = 'https://s3-us-west-2.amazonaws.com/dark-cloud-bucket-dev/weapons/images/';
+  weaponUrlRoot: string = './api/weapons/images/';
+  //weaponUrlRoot: string = 'https://s3-us-west-2.amazonaws.com/dark-cloud-bucket-dev/weapons/images/';
   //weaponUrlRoot: string = 'https://s3-us-west-2.amazonaws.com/dark-cloud-bucket2/weapons/images/'
 
 
