@@ -23,6 +23,8 @@ def image_is_side_weapon_side_screen(source_text):
         return True
     if has_text(source_text=source_text, find_text='Floid'):
         return True
+    if has_text(source_text=source_text, find_text='speed'):
+        return True
 
     return False
 

@@ -11,7 +11,7 @@ from io import StringIO, BytesIO
 
 
 class FileOs():
-    
+
     def path_basename(self, path):
         trash, tail = ntpath.split(path)
         filebasename = os.path.splitext(tail)[0]
@@ -55,7 +55,7 @@ class FileOs():
 
     def set_base_path(self, base_path):
         self._base_path = base_path
-    
+
     def get_base_path(self):
         return self._base_path
 
@@ -67,5 +67,3 @@ class FileOs():
         head, tail = ntpath.split(key)
         trash, parent_folder = ntpath.split(head)
         return parent_folder
-
-

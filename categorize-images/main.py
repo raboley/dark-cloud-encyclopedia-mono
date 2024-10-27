@@ -16,17 +16,24 @@ if __name__ == '__main__':
         os.makedirs(output_folder)
 
     # Load weapon data
-    json_file_path = 'categorize/data/all_weapons.json'
+    json_file_path = 'data/all_weapons.json'
     weapons_data = load_json(json_file_path)
     characters = {weapon['characterName'] for weapon in weapons_data}
     weapons = {weapon['weaponName'] for weapon in weapons_data}
 
-    # Development so we only do 1 folder at a time.
-    allImageDirectories = allImageDirectories[0:1]
+    ### Development so we only do 1 folder at a time.
+    #allImageDirectories = allImageDirectories[0:1]
+
+    # remove any nondirectory files
+    allImageDirectories = [d for d in allImageDirectories if os.path.isdir(input_folder + d)]
+
     for imageDirectory in allImageDirectories:
         side_index = 1
         print("Processing folder: " + imageDirectory)
         for image in os.listdir(input_folder + imageDirectory):
+            if image.endswith(".jpg") is not True:
+                continue
+
             print("Processing image: " + image)
             # 0. Correct the output character and weapon name
             original_character_name = imageDirectory.split("_")[0]
@@ -42,12 +49,12 @@ if __name__ == '__main__':
             # 2. Determine the type of image
             image_type = determine_picture_type(picture_text)
             if image_type is None:
-                print("\033[91mCould not determine the image type for " + input_path + "\033[0m")
-                print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-                print("Read text was: " + picture_text)
-                print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~") 
-                unmatched_images.append(input_path)
+                unmatched_images.append({
+                    'path': input_path,
+                    'text': picture_text
+                })
                 continue
+
             if image_type == "Side":
                 image_type = "Side" + str(side_index)
                 side_index += 1
@@ -58,3 +65,12 @@ if __name__ == '__main__':
             shutil.copy(input_path, output_path)
 
             print("Created image: " + output_path)
+
+    # Output error messages and paths at the end
+    if unmatched_images:
+        print("\033[91mCould not determine the image type for the following images:\033[0m")
+        for error in unmatched_images:
+            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("Image path: " + error['path'])
+            print("Read text was: " + error['text'])
+            print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")

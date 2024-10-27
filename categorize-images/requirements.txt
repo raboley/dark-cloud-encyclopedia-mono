@@ -1,6 +1,0 @@
-nose
-sphinx
-
-Flask
-pytesseract
-Pillow

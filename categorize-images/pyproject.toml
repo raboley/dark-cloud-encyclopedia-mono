@@ -13,3 +13,7 @@ dependencies = [
     "torch>=2.5.0",
     "torchvision>=0.20.0",
 ]
+
+[tool.pyright]
+venvPath = "."
+venv = "venv"
