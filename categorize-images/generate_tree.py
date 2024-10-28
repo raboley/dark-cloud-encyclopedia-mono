@@ -19,8 +19,8 @@ def list_directories(path):
 def generate_tree(weapons_data, directories, only_missing=False, show_details=False, show_errored=False):
     tree = {}
     for weapon in weapons_data:
-        character = correct_character_name(weapon['characterName'], directories)
-        weapon_name = correct_weapon_name(weapon['weaponName'], directories)
+        character = correct_character_name_from_directories(weapon['characterName'], directories)
+        weapon_name = correct_weapon_name_from_directories(weapon['weaponName'], directories)
         folder_name = f"{character}_{weapon_name}"
         exists = weapon_exists(folder_name, directories)
         if only_missing and exists:
@@ -50,7 +50,7 @@ def weapon_exists(folder_name, directories):
     return False
 
 def find_unmatched_folders(weapons_data, directories):
-    weapon_folders = {f"{correct_character_name(weapon['characterName'], directories)}_{correct_weapon_name(weapon['weaponName'], directories)}" for weapon in weapons_data}
+    weapon_folders = {f"{correct_character_name_from_directories(weapon['characterName'], directories)}_{correct_weapon_name_from_directories(weapon['weaponName'], directories)}" for weapon in weapons_data}
     unmatched_folders = [folder for folder in directories if not weapon_exists(folder, weapon_folders)]
     return unmatched_folders
 
@@ -61,15 +61,23 @@ def fuzzy_match(folder_name, weapon_folders):
     match, score = result
     return match, score
 
-def correct_character_name(character_name, directories):
-    characters = {d.split('_')[0] for d in directories}
+def correct_character_name(character_name, characters):
     match, score = process.extractOne(character_name, characters)
     return match if score > 90 else character_name
 
-def correct_weapon_name(weapon_name, directories):
-    weapons = {d.split('_')[1] for d in directories if '_' in d}
+def correct_weapon_name(weapon_name, weapons):
     match, score = process.extractOne(weapon_name, weapons)
     return match if score > 90 else weapon_name
+
+def correct_character_name_from_directories(character_name, directories):
+    characters = {d.split('_')[0] for d in directories}
+    print("looking for match for character: ", character_name)
+    correct_character_name(character_name, characters)
+
+def correct_weapon_name_from_directories(weapon_name, directories):
+    weapons = {d.split('_')[1] for d in directories if '_' in d}
+    print("looking for match for weapon: ", weapon_name)
+    correct_weapon_name(weapon_name, weapons)
 
 def check_images_status(folder_name):
     images_status = {}
@@ -125,7 +133,7 @@ if __name__ == '__main__':
     weapons_data = load_json(json_file_path)
     directories = list_directories(input_dir_path)
 
-    weapon_folders = {f"{correct_character_name(weapon['characterName'], directories)}_{correct_weapon_name(weapon['weaponName'], directories)}" for weapon in weapons_data}
+    weapon_folders = {f"{correct_character_name_from_directories(weapon['characterName'], directories)}_{correct_weapon_name_from_directories(weapon['weaponName'], directories)}" for weapon in weapons_data}
     characters = {weapon['characterName'] for weapon in weapons_data}
     weapons = {weapon['weaponName'] for weapon in weapons_data}
 

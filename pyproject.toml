@@ -8,6 +8,7 @@ members = ["image-manipulation", "categorize-images"]
 name = "dark-cloud-encyclopedia"
 version = "0.1.0"
 dependencies = [
+    "fuzzywuzzy>=0.18.0",
     "requests>=2.32.3",
 ]
 

@@ -7,12 +7,13 @@ def determine_picture_type(source_text):
         return 'Side'
 
 def image_is_weapon_stat_screen(source_text):
+    if has_text(source_text=source_text, find_text='repair'):
+        return False
     if has_text(source_text=source_text, find_text='ATTACH'):
         return True
+    return False
 
 def image_is_weapon_main_screen(source_text):
-    if has_text(source_text=source_text, find_text='ATTACH'):
-        return False
     if has_text(source_text=source_text, find_text='WEAPON'):
         return True
 

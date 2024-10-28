@@ -21,11 +21,11 @@ if __name__ == '__main__':
     characters = {weapon['characterName'] for weapon in weapons_data}
     weapons = {weapon['weaponName'] for weapon in weapons_data}
 
-    ### Development so we only do 1 folder at a time.
-    #allImageDirectories = allImageDirectories[0:1]
 
     # remove any nondirectory files
     allImageDirectories = [d for d in allImageDirectories if os.path.isdir(input_folder + d)]
+    ### Development so we only do 1 folder at a time.
+    allImageDirectories = ["Osmond_Swallow"]
 
     for imageDirectory in allImageDirectories:
         side_index = 1
@@ -46,6 +46,7 @@ if __name__ == '__main__':
             input_path = input_folder + imageDirectory + "/" + image
             picture_text = read_text_from_image(input_path)
 
+
             # 2. Determine the type of image
             image_type = determine_picture_type(picture_text)
             if image_type is None:
@@ -65,6 +66,9 @@ if __name__ == '__main__':
             shutil.copy(input_path, output_path)
 
             print("Created image: " + output_path)
+            print("------------------------------------")
+            print(picture_text)
+            print("------------------------------------")
 
     # Output error messages and paths at the end
     if unmatched_images:

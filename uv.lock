@@ -104,11 +104,15 @@ name = "dark-cloud-encyclopedia"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "fuzzywuzzy", marker = "python_full_version == '3.12.*'" },
     { name = "requests", marker = "python_full_version == '3.12.*'" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "requests", specifier = ">=2.32.3" }]
+requires-dist = [
+    { name = "fuzzywuzzy", specifier = ">=0.18.0" },
+    { name = "requests", specifier = ">=2.32.3" },
+]
 
 [[package]]
 name = "easyocr"
