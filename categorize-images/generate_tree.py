@@ -3,6 +3,10 @@ import json
 import argparse
 from fuzzywuzzy import process
 
+json_file_path = 'data/all_weapons.json'
+input_dir_path = 'all_images/input'
+final_output_dir = '../dark-cloud-website/src/api/weapons/images/'
+
 def load_json(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
@@ -78,8 +82,7 @@ if __name__ == '__main__':
     parser.add_argument('--only-unmatched', action='store_true', help="Show only unmatched folders")
     args = parser.parse_args()
 
-    json_file_path = 'data/all_weapons.json'
-    input_dir_path = 'all_images/input'
+
 
     weapons_data = load_json(json_file_path)
     directories = list_directories(input_dir_path)
