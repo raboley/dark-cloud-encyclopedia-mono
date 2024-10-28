@@ -7,6 +7,8 @@ json_file_path = 'data/all_weapons.json'
 input_dir_path = 'all_images/input'
 final_output_dir = '../dark-cloud-website/src/api/weapons/images/'
 
+IMAGE_TYPES = ['Side1', 'Side2', 'Main', 'Stats', 'Thumbnail']
+
 def load_json(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
@@ -14,7 +16,7 @@ def load_json(file_path):
 def list_directories(path):
     return [d for d in os.listdir(path) if os.path.isdir(os.path.join(path, d))]
 
-def generate_tree(weapons_data, directories, only_missing=False):
+def generate_tree(weapons_data, directories, only_missing=False, show_details=False):
     tree = {}
     for weapon in weapons_data:
         character = weapon['characterName']
@@ -25,7 +27,13 @@ def generate_tree(weapons_data, directories, only_missing=False):
             continue
         if character not in tree:
             tree[character] = []
-        tree[character].append((weapon_name, exists))
+        if show_details:
+            images_status = check_images_status(folder_name)
+            if only_missing and all(images_status.values()):
+                continue
+            tree[character].append((weapon_name, exists, images_status))
+        else:
+            tree[character].append((weapon_name, exists))
     return tree
 
 def weapon_exists(folder_name, directories):
@@ -43,7 +51,10 @@ def find_unmatched_folders(weapons_data, directories):
     return unmatched_folders
 
 def fuzzy_match(folder_name, weapon_folders):
-    match, score = process.extractOne(folder_name, weapon_folders)
+    result = process.extractOne(folder_name, weapon_folders)
+    if result is None:
+        return None, 0
+    match, score = result
     return match, score
 
 def correct_character_name(character_name, characters):
@@ -54,16 +65,31 @@ def correct_weapon_name(weapon_name, weapons):
     match, score = process.extractOne(weapon_name, weapons)
     return match if score > 90 else weapon_name
 
-def print_tree(tree):
+def check_images_status(folder_name):
+    images_status = {}
+    for image_type in IMAGE_TYPES:
+        image_name = f"{folder_name}_{image_type}.jpg"
+        image_path = os.path.join(final_output_dir, image_name)
+        images_status[image_type] = os.path.exists(image_path)
+    return images_status
+
+def print_tree(tree, show_details=False):
     for character, weapons in tree.items():
         print(character)
-        for i, (weapon, exists) in enumerate(weapons):
+        for i, weapon_info in enumerate(weapons):
+            weapon_name = weapon_info[0]
+            exists = weapon_info[1]
             if i == len(weapons) - 1:
                 prefix = "└──"
             else:
                 prefix = "├──"
             status = "✔️" if exists else "❌"
-            print(f"  {prefix} {weapon} {status}")
+            print(f"  {prefix} {weapon_name} {status}")
+            if show_details and exists:
+                images_status = weapon_info[2]
+                for image_type, image_exists in images_status.items():
+                    image_status = "✔️" if image_exists else "❌"
+                    print(f"    ├── {image_type}: {image_status}")
 
 def print_unmatched_folders(unmatched_folders, weapon_folders):
     print("Unmatched Folders:")
@@ -80,9 +106,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Generate a tree structure of weapons and their presence in directories.")
     parser.add_argument('--only-missing', action='store_true', help="Show only missing weapons")
     parser.add_argument('--only-unmatched', action='store_true', help="Show only unmatched folders")
+    parser.add_argument('--show-details', action='store_true', help="Show detailed image status")
     args = parser.parse_args()
-
-
 
     weapons_data = load_json(json_file_path)
     directories = list_directories(input_dir_path)
@@ -95,5 +120,5 @@ if __name__ == '__main__':
         unmatched_folders = find_unmatched_folders(weapons_data, directories)
         print_unmatched_folders(unmatched_folders, weapon_folders)
     else:
-        tree = generate_tree(weapons_data, directories, only_missing=args.only_missing)
-        print_tree(tree)
+        tree = generate_tree(weapons_data, directories, only_missing=args.only_missing, show_details=args.show_details)
+        print_tree(tree, show_details=args.show_details)
