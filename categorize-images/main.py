@@ -25,7 +25,7 @@ if __name__ == '__main__':
     # remove any nondirectory files
     allImageDirectories = [d for d in allImageDirectories if os.path.isdir(input_folder + d)]
     ### Development so we only do 1 folder at a time.
-    allImageDirectories = ["Osmond_Swallow"]
+    # allImageDirectories = ["Toan_Mardan Eins"]
 
     for imageDirectory in allImageDirectories:
         side_index = 1

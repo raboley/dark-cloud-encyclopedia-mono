@@ -17,3 +17,10 @@ The images will be named in the format `<characterName>_<Weapon Name>_<type>.jpe
 ## Getting started
 
 ```bash
+
+
+## TODO
+
+- [ ] Add a way to get images from PS4/PS5
+- [ ] Figure out how to crop the higher res ps5 images correctly
+- [ ] Collect the rest of the images.

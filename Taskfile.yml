@@ -7,6 +7,12 @@ tasks:
       - uv run main.py
     dir: categorize-images
 
+  get-missing:
+    desc: Get missing images in 'categorize-images/all_images/output'
+    cmds:
+      - uv run generate_tree.py --only-missing
+    dir: categorize-images
+    
   crop-images:
     desc: Crop images in 'categorize-images/all_images/output'
     cmds:

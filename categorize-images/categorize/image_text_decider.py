@@ -11,9 +11,20 @@ def image_is_weapon_stat_screen(source_text):
         return False
     if has_text(source_text=source_text, find_text='ATTACH'):
         return True
+    if has_text(source_text=source_text, find_text='AT TACHENT'):
+        return True
+    if has_text(source_text=source_text, find_text='WEAPON'):
+        return True
+
     return False
 
 def image_is_weapon_main_screen(source_text):
+    if has_text(source_text=source_text, find_text='BUiCd-UP'):
+        return True
+    if has_text(source_text=source_text, find_text='BUild UP'):
+        return True
+    if has_text(source_text=source_text, find_text='ATTACH'):
+        return False
     if has_text(source_text=source_text, find_text='WEAPON'):
         return True
 
