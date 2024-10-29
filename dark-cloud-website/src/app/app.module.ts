@@ -29,7 +29,11 @@ import { ImageChecklistModule } from './image-checklist/image-checklist.module';
     BrowserModule,
     HttpClientModule,
     WeaponModule,
-    FormsModule, NgxGraphModule, NgxChartsModule,BrowserAnimationsModule, ImageChecklistModule
+    FormsModule,
+    NgxGraphModule,
+    NgxChartsModule,
+    BrowserAnimationsModule,
+    ImageChecklistModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
