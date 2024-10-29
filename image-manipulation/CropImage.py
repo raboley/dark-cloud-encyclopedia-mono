@@ -55,7 +55,7 @@ if __name__ == '__main__':
     cropImage = CropImage(fileObject, output_folder=output_folder)
 
     ## local testing
-    image = fileObject.read_image_file("Ungaga_5_Foot_Nail_Side1.jpeg")
+    image = fileObject.read_image_file("Toan_Mardan_Eins_Side1.jpg")
     image.show()
     
     cropped = cropImage.crop_out_black_bars(image)
