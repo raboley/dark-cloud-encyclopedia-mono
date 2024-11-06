@@ -1,0 +1,7 @@
+.big-card-body {
+  height: 1080px; /* Set the height to 1080 pixels */
+  width: 1920px; /* Set the width to 1920 pixels */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

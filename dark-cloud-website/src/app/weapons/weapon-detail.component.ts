@@ -50,7 +50,7 @@ export class WeaponDetailComponent implements OnInit {
     this.weaponUrls = []
         for (let key in this.weaponUrlTypes) {
           let weaponUrlType = this.weaponUrlTypes[key];
-          let weaponPathName = this.weapon.weaponName.replace(" ","_")
+          let weaponPathName = this.weapon.weaponName.replace(" ","_").replace(" ", "_");
           this.weaponUrls.push({
                         
             url: `${this.weaponUrlRoot}${this.weapon.characterName}_${weaponPathName}_${weaponUrlType}`,
