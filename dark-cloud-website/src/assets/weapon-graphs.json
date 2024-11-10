@@ -8,15 +8,32 @@
       { "id": "16", "label": "Brave Ark", "position": "x16", "weaponThumbnail": "Toan_Brave_Ark_Thumbnail.jpg" },
       { "id": "26", "label": "7 Branch Sword", "position": "x26", "weaponThumbnail": "Toan_7_Branch_Sword_Thumbnail.jpg" },
 
+      { "id": "Dark_Cloud2", "label": "Dark Cloud", "position": "x28", "weaponThumbnail": "Toan_Dark_Cloud_Thumbnail.jpg" },
+      { "id": "7th_Heaven2", "label": "7th Heaven", "position": "x32", "weaponThumbnail": "Toan_7th_Heaven_Thumbnail.jpg" },
+
       { "id": "start2", "label": "Kitchen Knife", "position": "x8", "weaponThumbnail": "Toan_Kitchen_Knife_Thumbnail.jpg" },
 
       { "id": "Gladius", "label": "Gladius", "position": "x6", "weaponThumbnail": "Toan_Gladius_Thumbnail.jpg" },
       { "id": "Chopper", "label": "Chopper", "position": "x7", "weaponThumbnail": "Toan_Chopper_Thumbnail.jpg" },
       { "id": "Small_Sword", "label": "Small Sword", "position": "x4", "weaponThumbnail": "Toan_Small_Sword_Thumbnail.jpg" },
 
+      { "id": "Choora", "label": "Choora", "position": "x13", "weaponThumbnail": "Toan_Choora_Thumbnail.jpg" },
+      { "id": "Tsukikage", "label": "Tsukikage", "position": "x17", "weaponThumbnail": "Toan_Tsukikage_Thumbnail.jpg" },
+
       { "id": "Crysknife", "label": "Crysknife", "position": "x3", "weaponThumbnail": "Toan_Crysknife_Thumbnail.jpg" },
 
       { "id": "sb1", "label": "Sand Breaker", "position": "x5", "weaponThumbnail": "Toan_Sand_Breaker_Thumbnail.jpg" },
+      { "id": "Maneater", "label": "Maneater", "position": "x19", "weaponThumbnail": "Toan_Maneater_Thumbnail.jpg" },
+      { "id": "Heavens_Cloud", "label": "Heaven's Cloud", "position": "x18", "weaponThumbnail": "Toan_Heaven's_Cloud_Thumbnail.jpg" },
+      { "id": "Atlamilla_Sword", "label": "Atlamilla Sword", "position": "x27", "weaponThumbnail": "Toan_Atlamilla_Sword_Thumbnail.jpg" },
+      { "id": "Chronicle_Sword", "label": "Chronicle Sword", "position": "x30", "weaponThumbnail": "Toan_Chronicle_Sword_Thumbnail.jpg" },
+
+      { "id": "Antique_Sword", "label": "Antique Sword", "position": "x15", "weaponThumbnail": "Toan_Antique_Sword_Thumbnail.jpg" },
+      { "id": "Brave_Ark", "label": "Brave Ark", "position": "x16", "weaponThumbnail": "Toan_Brave_Ark_Thumbnail.jpg" },
+
+      { "id": "Dark_Cloud", "label": "Dark Cloud", "position": "x28", "weaponThumbnail": "Toan_Dark_Cloud_Thumbnail.jpg" },
+
+      { "id": "7th_Heaven", "label": "7th Heaven", "position": "x32", "weaponThumbnail": "Toan_7th_Heaven_Thumbnail.jpg" },
 
       { "id": "start4", "label": "Buster Sword", "position": "x11", "weaponThumbnail": "Toan_Buster_Sword_Thumbnail.jpg" },
       { "id": "12", "label": "Claymore", "position": "x12", "weaponThumbnail": "Toan_Claymore_Thumbnail.jpg" },
@@ -31,6 +48,8 @@
       { "source": "Shamshir", "target": "Dusack", "label": "Process#14" },
       { "source": "Sax", "target": "Dusack", "label": "Process#14" },
       { "source": "Dusack", "target": "16", "label": "Process#20" },
+      { "source": "16", "target": "Dark_Cloud2", "label": "Process#20" },
+      { "source": "Dark_Cloud2", "target": "7th_Heaven2", "label": "Process#20" },
       { "source": "Dusack", "target": "26", "label": "Process#21" },
 
       { "source": "start2", "target": "Chopper", "label": "Process#7" },
@@ -40,11 +59,23 @@
       { "source": "Gladius", "target": "Chopper", "label": "Process#6" },
       { "source": "Gladius", "target": "Small_Sword", "label": "Process#5" },
       { "source": "Chopper", "target": "Dusack", "label": "Process#5" },
+      { "source": "Small_Sword", "target": "Tsukikage", "label": "Process#4" },
+      { "source": "Chopper", "target": "Choora", "label": "Process#5" },
+      { "source": "Choora", "target": "Maneater", "label": "Process#5" },
+      { "source": "Choora", "target": "Heavens_Cloud", "label": "Process#5" },
+      { "source": "Tsukikage", "target": "Heavens_Cloud", "label": "Process#5" },
+      { "source": "Heavens_Cloud", "target": "Dark_Cloud", "label": "Process#3" },
 
       { "source": "Crysknife", "target": "Small_Sword", "label": "Process#4" },
       { "source": "Crysknife", "target": "sb1", "label": "Process#3" },
+      { "source": "sb1", "target": "Antique_Sword", "label": "Process#3" },
+      { "source": "Antique_Sword", "target": "Brave_Ark", "label": "Process#3" },
+      { "source": "Brave_Ark", "target": "Dark_Cloud", "label": "Process#3" },
+      { "source": "Dark_Cloud", "target": "7th_Heaven", "label": "Process#20" },
 
-
+      { "source": "26", "target": "Atlamilla_Sword", "label": "Process#3" },
+      { "source": "Maneater", "target": "Atlamilla_Sword", "label": "Process#3" },
+      { "source": "Atlamilla_Sword", "target": "Chronicle_Sword", "label": "Process#3" },
 
       { "source": "start4", "target": "12" },
       { "source": "12", "target": "20", "label": "Process#21" },

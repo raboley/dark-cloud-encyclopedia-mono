@@ -10,7 +10,7 @@ import { WeaponService } from './weapon.service';
 })
 export class WeaponDetailComponent implements OnInit {
   pageTitle = 'Weapon Detail';
-  errorMessage = '';6
+  errorMessage = '';
   weapon: IWeapon | undefined;
   weaponUrl: string;
   weaponUrlRoot: string = './api/weapons/images/';
