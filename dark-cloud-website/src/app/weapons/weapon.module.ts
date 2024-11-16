@@ -7,6 +7,8 @@ import { ConvertToSpacesPipe } from '../shared/convert-to-spaces.pipe';
 import { WeaponDetailGuard } from './weapon-detail.guard';
 import { SharedModule } from '../shared/shared.module';
 import { WeaponDetailImagesComponent } from './weapon-detail-images/weapon-detail-images.component';
+import { ImageModalModule } from '../image-modal/image-modal.module';
+
 
 @NgModule({
   imports: [
@@ -18,13 +20,14 @@ import { WeaponDetailImagesComponent } from './weapon-detail-images/weapon-detai
         component: WeaponDetailComponent
       },
     ]),
-    SharedModule
+    SharedModule,
+    ImageModalModule
   ],
   declarations: [
     WeaponListComponent,
     WeaponDetailComponent,
     ConvertToSpacesPipe,
-    WeaponDetailImagesComponent
+    WeaponDetailImagesComponent,
   ]
 })
 export class WeaponModule { }

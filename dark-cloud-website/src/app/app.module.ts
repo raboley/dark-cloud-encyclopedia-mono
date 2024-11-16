@@ -13,12 +13,15 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { ImageChecklistModule } from './image-checklist/image-checklist.module';
+import { ImageModalModule } from './image-modal/image-modal.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    WeaponGraphComponent
+    WeaponGraphComponent,
+
   ],
   imports: [
     RouterModule.forRoot([
@@ -33,7 +36,8 @@ import { ImageChecklistModule } from './image-checklist/image-checklist.module';
     NgxGraphModule,
     NgxChartsModule,
     BrowserAnimationsModule,
-    ImageChecklistModule
+    ImageChecklistModule,
+    ImageModalModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]

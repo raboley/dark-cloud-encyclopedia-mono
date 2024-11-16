@@ -1,5 +1,4 @@
-<div class='card'
-     *ngIf='weapon'>
+<div class='card' *ngIf='weapon'>
   <div class='card-header'>
     {{pageTitle + ': ' + weapon.weaponName}}
   </div>
@@ -25,25 +24,25 @@
         </div>
         <div class='row'>
           <div class='col-md-4'>Price:</div>
-          <div class='col-md-8'>{{weapon.price|currency:'USD':'symbol'}}</div>
+          <div class='col-md-8'>{{weapon.price | currency:'USD':'symbol'}}</div>
         </div>
         <div class='row'>
           <div class='col-md-4'>5 Star Rating:</div>
           <div class='col-md-8'>
-            <pm-star [rating]='weapon.starRating'>
-            </pm-star>
+            <pm-star [rating]='weapon.starRating'></pm-star>
           </div>
         </div>
       </div>
-   <tr *ngFor='let weaponUrl of weaponUrls'>   
       <div class='col-md-4'>
-        <img class='center-block img-responsive'
-      [style.width.px]='200'
-      [style.margin.px]='2'
-      [src]='weaponUrl.url'
-      [title]='weaponUrl.altText'>
+        <div *ngFor='let weaponUrl of weaponUrls'>
+          <img class='center-block img-responsive'
+               [style.width.px]='200'
+               [style.margin.px]='2'
+               [src]='weaponUrl.url'
+               [title]='weaponUrl.altText'
+               (click)='openModal(weaponUrl.url, weaponUrl.altText)'>
+        </div>
       </div>
-      </tr>
     </div>
   </div>
 
@@ -55,3 +54,5 @@
     </button>
   </div>
 </div>
+
+<app-image-modal #imageModal></app-image-modal>
