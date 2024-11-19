@@ -1,3 +1,4 @@
+// src/app/weapon-graph/weapon-graph.component.ts
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as shape from 'd3-shape';
@@ -51,5 +52,9 @@ export class WeaponGraphComponent implements OnInit {
       this.hierarchialGraph.nodes = graph.nodes;
       this.hierarchialGraph.links = graph.links;
     }
+  }
+
+  hasDims(): boolean {
+    return this.hierarchialGraph.nodes.length > 0 && this.hierarchialGraph.links.length > 0;
   }
 }

@@ -12,8 +12,15 @@
         [curve]="curve"
         [draggingEnabled]="false"
         [zoomLevel]=".9"
+        [enableZoom]="false"
+        [panningEnabled]="false"
+        [autoZoom]="true"
+        (stateChange)="handleStateChange($event)"
+        [zoomToFit$]="zoomToFit$"
+        (mouseenter)="stopEvent($event)"
+        (mouseleave)="stopEvent($event)"
+        [panOnZoom]="false"
 >
-
     <ng-template #defsTemplate>
         <svg:marker id="arrow" viewBox="0 -5 10 10" refX="8" refY="0" markerWidth="4" markerHeight="4" orient="auto">
             <svg:path d="M0,-5L10,0L0,5" class="arrow-head" />
@@ -40,17 +47,6 @@
         stroke-width="2"
         marker-end="url(#arrow)" >
       </svg:path>
-<!--      <svg:text-->
-<!--        class="edge-label"-->
-<!--        text-anchor="middle">-->
-<!--&lt;!&ndash;      <textPath&ndash;&gt;-->
-<!--&lt;!&ndash;                style="fill: #666;"&ndash;&gt;-->
-<!--&lt;!&ndash;                [attr.href]="'#' + link.id"&ndash;&gt;-->
-<!--&lt;!&ndash;                startOffset="60%">&ndash;&gt;-->
-<!--&lt;!&ndash;        {{link.label}}&ndash;&gt;-->
-<!--&lt;!&ndash;      </textPath>&ndash;&gt;-->
-<!--    </svg:text>-->
     </svg:g>
   </ng-template>
-
 </ngx-graph>
