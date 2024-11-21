@@ -1,0 +1,23 @@
+# To get to production
+
+- [x] Make the weapon graph take up the full screen size
+- [ ] Make it so when you hover over the weapon on the graph, it has a tooltip thing that shows a bigger weapon image and the details from the details page
+- [ ] Make the images for thumbnails bigger on the list page
+- [ ] Make it obvious whose weapon it is on the weapons page.
+- [ ] Host website on github pages
+- [ ] Figure out how to get the images to store in github pages
+- [ ] Make the character select, be square portraits of the charactesr for the filter
+- [ ] Finish making sure the weapon graph looks good for each character
+  - [ ] Toan
+  - [ ] Xiao
+  - [ ] Goro
+  - [ ] Ruby
+  - [ ] Ungaga
+  - [ ] Osmond
+- [ ] Make sure each characters weapons screen has the stats, main and 2 side images plus the thumbnail
+  - [ ] Toan
+  - [ ] Xiao
+  - [ ] Goro
+  - [ ] Ruby
+  - [ ] Ungaga
+  - [ ] Osmond

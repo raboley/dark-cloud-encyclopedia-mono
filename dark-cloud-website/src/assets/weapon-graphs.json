@@ -190,8 +190,8 @@
       { "id": "6", "label": "Cactus", "position": "x6", "weaponThumbnail": "Ungaga_Cactus_Thumbnail.jpg" },
       { "id": "7", "label": "Mirage", "position": "x7", "weaponThumbnail": "Ungaga_Mirage_Thumbnail.jpg" },
       { "id": "8", "label": "Terra Sword", "position": "x8", "weaponThumbnail": "Ungaga_Terra_Sword_Thumbnail.jpg" },
-      { "id": "9", "label": "Hercule's Wrath", "position": "x9", "weaponThumbnail": "Ungaga_Hercules_Wrath_Thumbnail.jpg" },
-      { "id": "10", "label": "Babel's Spear", "position": "x10", "weaponThumbnail": "Ungaga_Babels_Spear_Thumbnail.jpg" }
+      { "id": "9", "label": "Hercule's Wrath", "position": "x9", "weaponThumbnail": "Ungaga_Hercule's_Wrath_Thumbnail.jpg" },
+      { "id": "10", "label": "Babel's Spear", "position": "x10", "weaponThumbnail": "Ungaga_Babel's_Spear_Thumbnail.jpg" }
     ],
     "links": [
       { "source": "start", "target": "1", "label": "Process#1" },
@@ -219,7 +219,7 @@
       { "id": "5", "label": "Hexa Blaster", "position": "x5", "weaponThumbnail": "Osmond_Hexa_Blaster_Thumbnail.jpg" },
       { "id": "6", "label": "Supernova", "position": "x6", "weaponThumbnail": "Osmond_Supernova_Thumbnail.jpg" },
       { "id": "7", "label": "Star Breaker", "position": "x7", "weaponThumbnail": "Osmond_Star_Breaker_Thumbnail.jpg" },
-      { "id": "snail", "label": "snail", "position": "x0", "weaponThumbnail": "Osmond_Snail_thumbnail.jpg" }
+      { "id": "snail", "label": "snail", "position": "x0", "weaponThumbnail": "Osmond_Snail_Thumbnail.jpg" }
     ],
     "links": [
       { "source": "start", "target": "1", "label": "Process#1" },

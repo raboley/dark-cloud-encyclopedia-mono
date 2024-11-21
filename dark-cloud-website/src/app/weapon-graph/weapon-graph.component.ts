@@ -1,26 +1,34 @@
-// src/app/weapon-graph/weapon-graph.component.ts
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as shape from 'd3-shape';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'weapon-graph',
   templateUrl: './weapon-graph.component.html',
   styleUrls: ['./weapon-graph.component.scss']
 })
-export class WeaponGraphComponent implements OnInit {
+export class WeaponGraphComponent implements OnInit, AfterViewInit {
   name = 'Angular 5';
   hierarchialGraph = { nodes: [], links: [] };
   curve = shape.curveBundle.beta(1);
-  weaponUrlRoot: string = './api/weapons/images/';
-  characters: string[] = ['Toan', 'Osmond', 'Xiao'];
-  selectedCharacter: string = this.characters[0];
+  weaponUrlRoot = './api/weapons/images/';
+  characters = ['Toan', 'Osmond', 'Xiao'];
+  selectedCharacter = this.characters[0];
   weaponGraphs: any = {};
+  zoomToFit$ = new Subject<boolean>();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private cdr: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.loadConfig();
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.zoomToFit$.next(true); // Trigger auto-centering after view initialization
+      this.cdr.detectChanges(); // Manually trigger change detection
+    }, 100); // Add a slight delay
   }
 
   loadConfig(): void {
@@ -51,10 +59,18 @@ export class WeaponGraphComponent implements OnInit {
     if (graph) {
       this.hierarchialGraph.nodes = graph.nodes;
       this.hierarchialGraph.links = graph.links;
+      setTimeout(() => {
+        this.zoomToFit$.next(true); // Trigger auto-centering after updating the graph
+        this.cdr.detectChanges(); // Manually trigger change detection
+      }, 100); // Add a slight delay
     }
   }
 
   hasDims(): boolean {
     return this.hierarchialGraph.nodes.length > 0 && this.hierarchialGraph.links.length > 0;
+  }
+
+  stopEvent(event: Event): void {
+    event.stopPropagation();
   }
 }
