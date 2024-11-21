@@ -9,14 +9,10 @@ import { WeaponService } from './weapon.service';
 })
 export class WeaponListComponent implements OnInit {
   pageTitle = 'Weapon List';
-  imageWidth = 50;
   imageMargin = 2;
   showImage = true;
   errorMessage = '';
   weaponUrlRoot: string = './api/weapons/images/';
-  //weaponUrlRoot: string = 'https://s3-us-west-2.amazonaws.com/dark-cloud-bucket-dev/weapons/images/';
-  //weaponUrlRoot: string = 'https://s3-us-west-2.amazonaws.com/dark-cloud-bucket2/weapons/images/'
-
 
   _listFilter = '';
   get listFilter(): string {
@@ -30,9 +26,7 @@ export class WeaponListComponent implements OnInit {
   filteredWeapons: IWeapon[] = [];
   weapons: IWeapon[] = [];
 
-  constructor(private weaponService: WeaponService) {
-
-  }
+  constructor(private weaponService: WeaponService) {}
 
   onRatingClicked(message: string): void {
     this.pageTitle = 'Weapon List: ' + message;
@@ -52,7 +46,6 @@ export class WeaponListComponent implements OnInit {
     this.weaponService.getWeapons().subscribe(
       weapons => {
         this.weapons = weapons;
-
         this.filteredWeapons = this.weapons;
       },
       error => this.errorMessage = <any>error

@@ -1,3 +1,10 @@
 thead {
   color: #337AB7;
 }
+
+.weapon-thumbnail {
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Set the desired height */
+  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  margin: 2px;
+}

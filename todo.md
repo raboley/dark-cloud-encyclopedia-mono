@@ -1,7 +1,6 @@
 # To get to production
 
 - [x] Make the weapon graph take up the full screen size
-- [ ] Make it so when you hover over the weapon on the graph, it has a tooltip thing that shows a bigger weapon image and the details from the details page
 - [ ] Make the images for thumbnails bigger on the list page
 - [ ] Make it obvious whose weapon it is on the weapons page.
 - [ ] Host website on github pages
@@ -21,3 +20,4 @@
   - [ ] Ruby
   - [ ] Ungaga
   - [ ] Osmond
+- [ ] Make it so when you hover over the weapon on the graph, it has a tooltip thing that shows a bigger weapon image and the details from the details page

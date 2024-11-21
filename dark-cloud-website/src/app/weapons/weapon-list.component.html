@@ -30,8 +30,6 @@
             <th>Weapon</th>
             <th>Character</th>
             <th>tier</th>
-            <th>Price</th>
-            <th>5 Star Rating</th>
           </tr>
         </thead>
         <tbody>
@@ -40,8 +38,7 @@
               <img *ngIf='showImage'
                    [src]='weaponUrlRoot + weapon.weaponThumbnail'
                    [title]='weapon.weaponThumbnail'
-                   [style.width.px]='imageWidth'
-                   [style.margin.px]='imageMargin'>
+                   class='weapon-thumbnail'>
             </td>
             <td>
               <a [routerLink]="['/weapons', weapon.weaponId]">
@@ -51,11 +48,6 @@
             <td>{{ weapon.characterName}}</td>
             <td>{{ weapon.tier }}</td>
             <td>{{ weapon.price | currency:'USD':'symbol':'1.2-2' }}</td>
-            <td>
-              <pm-star [rating]='weapon.starRating'
-                       (ratingClicked)='onRatingClicked($event)'>
-              </pm-star>
-            </td>
           </tr>
         </tbody>
       </table>
