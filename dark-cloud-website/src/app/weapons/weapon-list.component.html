@@ -48,15 +48,15 @@
                 <tbody>
                 <tr *ngFor='let weapon of filteredWeapons'>
                     <td class="weapon-cell">
-                        <img *ngIf='showImage'
-                             [src]='weaponUrlRoot + weapon.weaponThumbnail'
-                             [title]='weapon.weaponThumbnail'
-                             class='weapon-thumbnail'>
-                        <div>
-                            <a [routerLink]="['/weapons', weapon.weaponId]">
+                        <a [routerLink]="['/weapons', weapon.weaponId]" class="weapon-link">
+                            <img *ngIf='showImage'
+                                 [src]='weaponUrlRoot + weapon.weaponThumbnail'
+                                 [title]='weapon.weaponThumbnail'
+                                 class='weapon-thumbnail'>
+                            <div>
                                 {{ weapon.weaponName }}
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </td>
                     <td class="character-cell">
                         <img [src]="'./api/characters/' + weapon.characterName + '.jpg'"

@@ -42,3 +42,13 @@ thead th {
 .row.align-items-center {
   align-items: center; /* Vertically center the items in the row */
 }
+
+.weapon-link {
+  display: block;
+  color: inherit; /* Ensure the link inherits the text color */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.weapon-link:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
