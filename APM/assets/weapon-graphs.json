@@ -1,0 +1,236 @@
+{
+  "Toan": {
+    "nodes": [
+      { "id": "start1", "label": "Baselard", "position": "x0", "weaponThumbnail": "Toan_Baselard_Thumbnail.jpg" },
+      { "id": "Sax", "label": "Sax", "position": "x1", "weaponThumbnail": "Toan_Sax_Thumbnail.jpg" },
+      { "id": "Shamshir", "label": "Shamshir", "position": "x2", "weaponThumbnail": "Toan_Shamshir_Thumbnail.jpg" },
+      { "id": "Dusack", "label": "Dusack", "position": "x14", "weaponThumbnail": "Toan_Dusack_Thumbnail.jpg" },
+      { "id": "16", "label": "Brave Ark", "position": "x16", "weaponThumbnail": "Toan_Brave_Ark_Thumbnail.jpg" },
+      { "id": "26", "label": "7 Branch Sword", "position": "x26", "weaponThumbnail": "Toan_7_Branch_Sword_Thumbnail.jpg" },
+
+      { "id": "Dark_Cloud2", "label": "Dark Cloud", "position": "x28", "weaponThumbnail": "Toan_Dark_Cloud_Thumbnail.jpg" },
+      { "id": "7th_Heaven2", "label": "7th Heaven", "position": "x32", "weaponThumbnail": "Toan_7th_Heaven_Thumbnail.jpg" },
+
+      { "id": "start2", "label": "Kitchen Knife", "position": "x8", "weaponThumbnail": "Toan_Kitchen_Knife_Thumbnail.jpg" },
+
+      { "id": "Gladius", "label": "Gladius", "position": "x6", "weaponThumbnail": "Toan_Gladius_Thumbnail.jpg" },
+      { "id": "Chopper", "label": "Chopper", "position": "x7", "weaponThumbnail": "Toan_Chopper_Thumbnail.jpg" },
+      { "id": "Small_Sword", "label": "Small Sword", "position": "x4", "weaponThumbnail": "Toan_Small_Sword_Thumbnail.jpg" },
+
+      { "id": "Choora", "label": "Choora", "position": "x13", "weaponThumbnail": "Toan_Choora_Thumbnail.jpg" },
+      { "id": "Tsukikage", "label": "Tsukikage", "position": "x17", "weaponThumbnail": "Toan_Tsukikage_Thumbnail.jpg" },
+
+      { "id": "Crysknife", "label": "Crysknife", "position": "x3", "weaponThumbnail": "Toan_Crysknife_Thumbnail.jpg" },
+
+      { "id": "sb1", "label": "Sand Breaker", "position": "x5", "weaponThumbnail": "Toan_Sand_Breaker_Thumbnail.jpg" },
+      { "id": "Maneater", "label": "Maneater", "position": "x19", "weaponThumbnail": "Toan_Maneater_Thumbnail.jpg" },
+      { "id": "Heavens_Cloud", "label": "Heaven's Cloud", "position": "x18", "weaponThumbnail": "Toan_Heaven's_Cloud_Thumbnail.jpg" },
+      { "id": "Atlamilla_Sword", "label": "Atlamilla Sword", "position": "x27", "weaponThumbnail": "Toan_Atlamilla_Sword_Thumbnail.jpg" },
+      { "id": "Chronicle_Sword", "label": "Chronicle Sword", "position": "x30", "weaponThumbnail": "Toan_Chronicle_Sword_Thumbnail.jpg" },
+
+      { "id": "Antique_Sword", "label": "Antique Sword", "position": "x15", "weaponThumbnail": "Toan_Antique_Sword_Thumbnail.jpg" },
+      { "id": "Brave_Ark", "label": "Brave Ark", "position": "x16", "weaponThumbnail": "Toan_Brave_Ark_Thumbnail.jpg" },
+
+      { "id": "Dark_Cloud", "label": "Dark Cloud", "position": "x28", "weaponThumbnail": "Toan_Dark_Cloud_Thumbnail.jpg" },
+
+      { "id": "7th_Heaven", "label": "7th Heaven", "position": "x32", "weaponThumbnail": "Toan_7th_Heaven_Thumbnail.jpg" },
+
+      { "id": "start4", "label": "Buster Sword", "position": "x11", "weaponThumbnail": "Toan_Buster_Sword_Thumbnail.jpg" },
+      { "id": "12", "label": "Claymore", "position": "x12", "weaponThumbnail": "Toan_Claymore_Thumbnail.jpg" },
+      { "id": "20", "label": "Cross Hinder", "position": "x20", "weaponThumbnail": "Toan_Cross_Hinder_Thumbnail.jpg" },
+      { "id": "29", "label": "Big Bang", "position": "x29", "weaponThumbnail": "Toan_Big_Bang_Thumbnail.jpg" },
+      { "id": "31", "label": "Sword Of Zeus", "position": "x31", "weaponThumbnail": "Toan_Sword_Of_Zeus_Thumbnail.jpg" }
+    ],
+    "links": [
+      { "source": "start1", "target": "Sax", "label": "Process#1" },
+      { "source": "start1", "target": "Shamshir", "label": "Process#2" },
+
+      { "source": "Shamshir", "target": "Dusack", "label": "Process#14" },
+      { "source": "Sax", "target": "Dusack", "label": "Process#14" },
+      { "source": "Dusack", "target": "16", "label": "Process#20" },
+      { "source": "16", "target": "Dark_Cloud2", "label": "Process#20" },
+      { "source": "Dark_Cloud2", "target": "7th_Heaven2", "label": "Process#20" },
+      { "source": "Dusack", "target": "26", "label": "Process#21" },
+
+      { "source": "start2", "target": "Chopper", "label": "Process#7" },
+      { "source": "start2", "target": "Sax", "label": "Process#8" },
+
+
+      { "source": "Gladius", "target": "Chopper", "label": "Process#6" },
+      { "source": "Gladius", "target": "Small_Sword", "label": "Process#5" },
+      { "source": "Chopper", "target": "Dusack", "label": "Process#5" },
+      { "source": "Small_Sword", "target": "Tsukikage", "label": "Process#4" },
+      { "source": "Chopper", "target": "Choora", "label": "Process#5" },
+      { "source": "Choora", "target": "Maneater", "label": "Process#5" },
+      { "source": "Choora", "target": "Heavens_Cloud", "label": "Process#5" },
+      { "source": "Tsukikage", "target": "Heavens_Cloud", "label": "Process#5" },
+      { "source": "Heavens_Cloud", "target": "Dark_Cloud", "label": "Process#3" },
+
+      { "source": "Crysknife", "target": "Small_Sword", "label": "Process#4" },
+      { "source": "Crysknife", "target": "sb1", "label": "Process#3" },
+      { "source": "sb1", "target": "Antique_Sword", "label": "Process#3" },
+      { "source": "Antique_Sword", "target": "Brave_Ark", "label": "Process#3" },
+      { "source": "Brave_Ark", "target": "Dark_Cloud", "label": "Process#3" },
+      { "source": "Dark_Cloud", "target": "7th_Heaven", "label": "Process#20" },
+
+      { "source": "26", "target": "Atlamilla_Sword", "label": "Process#3" },
+      { "source": "Maneater", "target": "Atlamilla_Sword", "label": "Process#3" },
+      { "source": "Atlamilla_Sword", "target": "Chronicle_Sword", "label": "Process#3" },
+
+      { "source": "start4", "target": "12" },
+      { "source": "12", "target": "20", "label": "Process#21" },
+      { "source": "20", "target": "29", "label": "Process#29" },
+      { "source": "29", "target": "31", "label": "Process#37" }
+    ]
+  },
+  "Xiao": {
+    "nodes": [
+
+      { "id": "start", "label": "Bandit Slingshot", "position": "x0", "weaponThumbnail": "Xiao_Bandit_Slingshot_Thumbnail.jpg" },
+      { "id": "1", "label": "Hardshooter", "position": "x1", "weaponThumbnail": "Xiao_Hardshooter_Thumbnail.jpg" },
+      { "id": "2", "label": "Double Impact", "position": "x2", "weaponThumbnail": "Xiao_Double_Impact_Thumbnail.jpg" },
+      { "id": "3", "label": "Bone Slingshot", "position": "x3", "weaponThumbnail": "Xiao_Bone_Slingshot_Thumbnail.jpg" },
+      { "id": "4", "label": "Flamingo", "position": "x4", "weaponThumbnail": "Xiao_Flamingo_Thumbnail.jpg" },
+      { "id": "5", "label": "Steel Slingshot", "position": "x5", "weaponThumbnail": "Xiao_Steel_Slingshot_Thumbnail.jpg" },
+      { "id": "6", "label": "Matador", "position": "x7", "weaponThumbnail": "Xiao_Matador_Thumbnail.jpg" },
+      { "id": "7", "label": "Dragon's Y", "position": "x6", "weaponThumbnail": "Xiao_Dragon's_Y_Thumbnail.jpg" },
+      { "id": "8", "label": "Divine Beast Title", "position": "x8", "weaponThumbnail": "Xiao_Divine_Beast_Title_Thumbnail.jpg" },
+      { "id": "9", "label": "Angel Shooter", "position": "x9", "weaponThumbnail": "Xiao_Angel_Shooter_Thumbnail.jpg" },
+      { "id": "10", "label": "Angel Gear", "position": "x10", "weaponThumbnail": "Xiao_Angel_Gear_Thumbnail.jpg" },
+      { "id": "11", "label": "Steve", "position": "x11", "weaponThumbnail": "Xiao_Steve_Thumbnail.jpg" },
+      { "id": "12", "label": "Super Steve", "position": "x12", "weaponThumbnail": "Xiao_Super_Steve_Thumbnail.jpg" }
+    ],
+    "links": [
+      { "source": "start", "target": "1", "label": "Process#1" },
+      { "source": "start", "target": "2", "label": "Process#2" },
+      { "source": "3", "target": "4", "label": "Process#3" },
+      { "source": "5", "target": "1", "label": "Process#4" },
+      { "source": "4", "target": "7", "label": "Process#5" },
+      { "source": "1", "target": "2", "label": "Process#6" },
+      { "source": "1", "target": "6", "label": "Process#7" },
+      { "source": "2", "target": "8", "label": "Process#8" },
+      { "source": "6", "target": "8", "label": "Process#10" },
+      { "source": "7", "target": "8", "label": "Process#9" },
+      { "source": "8", "target": "9", "label": "Process#11" },
+      { "source": "11", "target": "12", "label": "Process#13" },
+      { "source": "9", "target": "10", "label": "Process#12" }
+    ]
+  },
+  "Goro": {
+    "nodes": [
+      { "id": "start", "label": "Frozen Tuna", "position": "x0", "weaponThumbnail": "Goro_Frozen_Tuna_Thumbnail.jpg" },
+      { "id": "1", "label": "Turtle Shell", "position": "x1", "weaponThumbnail": "Goro_Turtle_Shell_Thumbnail.jpg" },
+      { "id": "2", "label": "Steel Hammer", "position": "x2", "weaponThumbnail": "Goro_Steel_Hammer_Thumbnail.jpg" },
+      { "id": "3", "label": "Plate Hammer", "position": "x3", "weaponThumbnail": "Goro_Plate_Hammer_Thumbnail.jpg" },
+      { "id": "4", "label": "Big Bucks Hammer", "position": "x4", "weaponThumbnail": "Goro_Big_Bucks_Hammer_Thumbnail.jpg" },
+      { "id": "5", "label": "Magical Hammer", "position": "x5", "weaponThumbnail": "Goro_Magical_Hammer_Thumbnail.jpg" },
+      { "id": "6", "label": "Gaia Hammer", "position": "x6", "weaponThumbnail": "Goro_Gaia_Hammer_Thumbnail.jpg" },
+      { "id": "7", "label": "Trial Hammer", "position": "x7", "weaponThumbnail": "Goro_Trial_Hammer_Thumbnail.jpg" },
+      { "id": "8", "label": "Battle Axe", "position": "x8", "weaponThumbnail": "Goro_Battle_Axe_Thumbnail.jpg" },
+      { "id": "9", "label": "Satan's Ax", "position": "x9", "weaponThumbnail": "Goro_Satan's_Ax_Thumbnail.jpg" },
+      { "id": "10", "label": "Last Judgment", "position": "x10", "weaponThumbnail": "Goro_Last_Judgment_Thumbnail.jpg" },
+      { "id": "11", "label": "Tall Hammer", "position": "x11", "weaponThumbnail": "Goro_Tall_Hammer_Thumbnail.jpg" },
+      { "id": "12", "label": "Inferno", "position": "x12", "weaponThumbnail": "Goro_Inferno_Thumbnail.jpg" }
+    ],
+    "links": [
+      { "source": "start", "target": "1", "label": "Process#1" },
+      { "source": "2", "target": "3", "label": "Process#2" },
+      { "source": "4", "target": "5", "label": "Process#3" },
+      { "source": "3", "target": "5", "label": "Process#4" },
+      { "source": "7", "target": "6", "label": "Process#5" },
+      { "source": "1", "target": "5", "label": "Process#6" },
+      { "source": "1", "target": "8", "label": "Process#7" },
+      { "source": "8", "target": "9", "label": "Process#8" },
+      { "source": "5", "target": "6", "label": "Process#9" },
+      { "source": "5", "target": "10", "label": "Process#10" },
+      { "source": "6", "target": "11", "label": "Process#11" },
+      { "source": "10", "target": "11", "label": "Process#12" },
+      { "source": "9", "target": "12", "label": "Process#13" }
+    ]
+  },
+  "Ruby": {
+    "nodes": [
+      { "id": "start", "label": "Thorn Armlet", "position": "x0", "weaponThumbnail": "Ruby_Thorn_Armlet_Thumbnail.jpg" },
+      { "id": "1", "label": "Platinum Ring", "position": "x1", "weaponThumbnail": "Ruby_Platinum_Ring_Thumbnail.jpg" },
+      { "id": "2", "label": "Bandit's Ring", "position": "x2", "weaponThumbnail": "Ruby_Bandit's_Ring_Thumbnail.jpg" },
+      { "id": "3", "label": "Crystal Ring", "position": "x3", "weaponThumbnail": "Ruby_Crystal_Ring_Thumbnail.jpg" },
+      { "id": "4", "label": "Pockleful", "position": "x4", "weaponThumbnail": "Ruby_Pockleful_Thumbnail.jpg" },
+      { "id": "5", "label": "Fairy's Ring", "position": "x5", "weaponThumbnail": "Ruby_Fairy's_Ring_Thumbnail.jpg" },
+      { "id": "6", "label": "Goddess Ring", "position": "x6", "weaponThumbnail": "Ruby_Goddess_Ring_Thumbnail.jpg" },
+      { "id": "7", "label": "Satan's Ring", "position": "x7", "weaponThumbnail": "Ruby_Satan's_Ring_Thumbnail.jpg" },
+      { "id": "8", "label": "Destruction Ring", "position": "x8", "weaponThumbnail": "Ruby_Destruction_Ring_Thumbnail.jpg" },
+      { "id": "9", "label": "Athena's Armlet", "position": "x9", "weaponThumbnail": "Ruby_Athena's_Armlet_Thumbnail.jpg" },
+      { "id": "10", "label": "Secret Armlet", "position": "x10", "weaponThumbnail": "Ruby_Secret_Armlet_Thumbnail.jpg" },
+      { "id": "11", "label": "Mobius Ring", "position": "x11", "weaponThumbnail": "Ruby_Mobius_Ring_Thumbnail.jpg" }
+    ],
+    "links": [
+      { "source": "start", "target": "1", "label": "Process#1" },
+      { "source": "2", "target": "3", "label": "Process#2" },
+      { "source": "2", "target": "4", "label": "Process#3" },
+      { "source": "1", "target": "3", "label": "Process#4" },
+      { "source": "1", "target": "5", "label": "Process#5" },
+      { "source": "3", "target": "6", "label": "Process#6" },
+      { "source": "3", "target": "7", "label": "Process#7" },
+      { "source": "4", "target": "5", "label": "Process#8" },
+      { "source": "5", "target": "8", "label": "Process#9" },
+      { "source": "6", "target": "9", "label": "Process#10" },
+      { "source": "9", "target": "10", "label": "Process#11" },
+      { "source": "8", "target": "11", "label": "Process#12" },
+      { "source": "7", "target": "11", "label": "Process#13" }
+    ]
+  },
+  "Ungaga": {
+    "nodes": [
+      { "id": "start", "label": "5 Foot Nail", "position": "x0", "weaponThumbnail": "Ungaga_5_Foot_Nail_Thumbnail.jpg" },
+      { "id": "1", "label": "Scorpion", "position": "x1", "weaponThumbnail": "Ungaga_Scorpion_Thumbnail.jpg" },
+      { "id": "2", "label": "Partisan", "position": "x2", "weaponThumbnail": "Ungaga_Partisan_Thumbnail.jpg" },
+      { "id": "3", "label": "Halberd", "position": "x3", "weaponThumbnail": "Ungaga_Halberd_Thumbnail.jpg" },
+      { "id": "4", "label": "Javelin", "position": "x4", "weaponThumbnail": "Ungaga_Javelin_Thumbnail.jpg" },
+      { "id": "5", "label": "De Sanga", "position": "x5", "weaponThumbnail": "Ungaga_De_Sanga_Thumbnail.jpg" },
+      { "id": "6", "label": "Cactus", "position": "x6", "weaponThumbnail": "Ungaga_Cactus_Thumbnail.jpg" },
+      { "id": "7", "label": "Mirage", "position": "x7", "weaponThumbnail": "Ungaga_Mirage_Thumbnail.jpg" },
+      { "id": "8", "label": "Terra Sword", "position": "x8", "weaponThumbnail": "Ungaga_Terra_Sword_Thumbnail.jpg" },
+      { "id": "9", "label": "Hercule's Wrath", "position": "x9", "weaponThumbnail": "Ungaga_Hercule's_Wrath_Thumbnail.jpg" },
+      { "id": "10", "label": "Babel's Spear", "position": "x10", "weaponThumbnail": "Ungaga_Babel's_Spear_Thumbnail.jpg" }
+    ],
+    "links": [
+      { "source": "start", "target": "1", "label": "Process#1" },
+      { "source": "start", "target": "2", "label": "Process#2" },
+      { "source": "3", "target": "1", "label": "Process#3" },
+      { "source": "4", "target": "5", "label": "Process#4" },
+      { "source": "4", "target": "2", "label": "Process#5" },
+      { "source": "5", "target": "6", "label": "Process#6" },
+      { "source": "2", "target": "6", "label": "Process#7" },
+      { "source": "1", "target": "7", "label": "Process#8" },
+      { "source": "1", "target": "6", "label": "Process#9" },
+      { "source": "6", "target": "8", "label": "Process#10" },
+      { "source": "7", "target": "8", "label": "Process#11" },
+      { "source": "7", "target": "9", "label": "Process#12" },
+      { "source": "8", "target": "10", "label": "Process#13" }
+    ]
+  },
+  "Osmond": {
+    "nodes": [
+      { "id": "start", "label": "Jackal", "position": "x0", "weaponThumbnail": "Osmond_Jackal_Thumbnail.jpg" },
+      { "id": "1", "label": "Blessing Gun", "position": "x1", "weaponThumbnail": "Osmond_Blessing_Gun_Thumbnail.jpg" },
+      { "id": "2", "label": "Swallow", "position": "x2", "weaponThumbnail": "Osmond_Swallow_Thumbnail.jpg" },
+      { "id": "3", "label": "Skunk", "position": "x3", "weaponThumbnail": "Osmond_Skunk_Thumbnail.jpg" },
+      { "id": "4", "label": "G Crusher", "position": "x4", "weaponThumbnail": "Osmond_G_Crusher_Thumbnail.jpg" },
+      { "id": "5", "label": "Hexa Blaster", "position": "x5", "weaponThumbnail": "Osmond_Hexa_Blaster_Thumbnail.jpg" },
+      { "id": "6", "label": "Supernova", "position": "x6", "weaponThumbnail": "Osmond_Supernova_Thumbnail.jpg" },
+      { "id": "7", "label": "Star Breaker", "position": "x7", "weaponThumbnail": "Osmond_Star_Breaker_Thumbnail.jpg" },
+      { "id": "snail", "label": "snail", "position": "x0", "weaponThumbnail": "Osmond_Snail_Thumbnail.jpg" }
+    ],
+    "links": [
+      { "source": "start", "target": "1", "label": "Process#1" },
+      { "source": "start", "target": "2", "label": "Process#2" },
+      { "source": "1", "target": "3", "label": "Process#3" },
+      { "source": "2", "target": "4", "label": "Process#4" },
+      { "source": "5", "target": "6", "label": "Process#6" },
+      { "source": "3", "target": "5" },
+      { "source": "4", "target": "7", "label": "Process#7" },
+      { "source": "snail", "target": "1", "label": "snail->blessing" },
+      { "source": "snail", "target": "5", "label": "snail->hexa blaster" }
+    ]
+  }
+}
