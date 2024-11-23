@@ -13,12 +13,14 @@
             <div class='col-md-6'>
                 <div class='character-filter'>
                     <label>Filter By Character:</label>
-                    <img *ngFor='let character of characters'
-                         [src]="'./api/characters/' + character + '.jpg'"
-                         [alt]="character"
-                         class='character-portrait'
-                         [class.grayscale]="selectedCharacters.length && !selectedCharacters.includes(character)"
-                         (click)='filterByCharacter(character, $event)'>
+                    <div class='character-images'>
+                        <img *ngFor='let character of characters'
+                             [src]="'./api/characters/' + character + '.jpg'"
+                             [alt]="character"
+                             class='character-portrait'
+                             [class.grayscale]="selectedCharacters.length && !selectedCharacters.includes(character)"
+                             (click)='filterByCharacter(character, $event)'>
+                    </div>
                     <button *ngIf='selectedCharacters.length'
                             (click)='clearCharacterFilter()'
                             class='btn btn-primary'>

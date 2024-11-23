@@ -24,9 +24,15 @@ thead th {
 
 .character-filter {
   display: flex;
-  align-items: center;
+  flex-direction: column; /* Stack the label and images vertically */
+  align-items: flex-start; /* Align items to the start */
+  gap: 10px; /* Add some space between the label and images */
+}
+
+.character-images {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap */
   gap: 10px; /* Add some space between the images */
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .character-portrait.grayscale {
