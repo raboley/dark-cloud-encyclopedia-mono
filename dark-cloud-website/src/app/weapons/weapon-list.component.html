@@ -29,30 +29,30 @@
             </th>
             <th>Weapon</th>
             <th>Character</th>
-            <th>tier</th>
+            <th>Buildup Tier</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor='let weapon of filteredWeapons'>
-            <td>
+            <td class="weapon-cell">
               <img *ngIf='showImage'
                    [src]='weaponUrlRoot + weapon.weaponThumbnail'
                    [title]='weapon.weaponThumbnail'
                    class='weapon-thumbnail'>
+              <div>
+                  <a [routerLink]="['/weapons', weapon.weaponId]">
+                      {{ weapon.weaponName }}
+                  </a>
+              </div>
             </td>
-            <td>
-              <a [routerLink]="['/weapons', weapon.weaponId]">
-                {{ weapon.weaponName }}
-              </a>
-            </td>
-            <td>
+            <td class="character-cell">
               <img [src]="'./api/characters/' + weapon.characterName + '.jpg'"
                    [alt]="weapon.characterName"
                    class="character-portrait">
-              {{ weapon.characterName }}
+              <div>{{ weapon.characterName }}</div>
             </td>
             <td>{{ weapon.tier }}</td>
-            <td>{{ weapon.price | currency:'USD':'symbol':'1.2-2' }}</td>
+
           </tr>
         </tbody>
       </table>
