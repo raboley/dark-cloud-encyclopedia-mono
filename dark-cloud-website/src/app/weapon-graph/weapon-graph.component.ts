@@ -19,7 +19,10 @@ export class WeaponGraphComponent implements OnInit, AfterViewInit {
   zoomToFit$ = new Subject<boolean>();
 
   constructor(private http: HttpClient, private cdr: ChangeDetectorRef) {}
-
+filterByCharacter(character: string): void {
+  this.selectedCharacter = character;
+  this.showGraph();
+}
   ngOnInit(): void {
     this.loadConfig();
   }

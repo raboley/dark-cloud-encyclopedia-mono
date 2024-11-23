@@ -57,3 +57,29 @@
   cursor: default; /* Override the cursor style for the panning rectangle */
   pointer-events: none; /* Ensure it does not capture events */
 }
+
+.character-portrait {
+  width: 75px; /* Set the desired width */
+  height: 75px; /* Set the desired height */
+  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  margin-bottom: 5px; /* Add some space between the image and the text */
+}
+
+.character-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add some space between the images */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.character-portrait.grayscale {
+  filter: grayscale(100%);
+}
+
+.row.align-items-center {
+  align-items: center; /* Vertically center the items in the row */
+}
+
+.flex-text {
+  flex-wrap: wrap;
+}

@@ -8,9 +8,8 @@ import { WeaponGraphComponent } from './weapon-graph/weapon-graph.component';
     <nav class='navbar navbar-expand navbar-light bg-light'>
         <a class='navbar-brand'>{{pageTitle}}</a>
         <ul class='nav nav-pills'>
-          <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/weapon-graph']">Home</a></li>
+          <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/weapon-graph']">Weapon Buildup</a></li>
           <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/weapons']">Weapon List</a></li>
-          <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/image-checklist']">Image Checklist</a></li>
         </ul>
     </nav>
     <div class='container-fluid'>

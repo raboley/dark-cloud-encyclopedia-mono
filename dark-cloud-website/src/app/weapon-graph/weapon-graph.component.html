@@ -1,8 +1,13 @@
-<div>
-    <label for="characterSelect">Select Character:</label>
-    <select id="characterSelect" (change)="onCharacterChange($event)">
-        <option *ngFor="let character of characters" [value]="character">{{ character }}</option>
-    </select>
+<div class='character-filter'>
+    <img *ngFor='let character of characters'
+         [src]="'./api/characters/' + character + '.jpg'"
+         [alt]="character"
+         class='character-portrait'
+         [class.grayscale]="selectedCharacter !== character"
+         (click)='filterByCharacter(character)'>
+</div>
+<div class="selected-character">
+    Selected Character: <strong>{{ selectedCharacter }}</strong>
 </div>
 <ngx-graph
         class="chart-container"
@@ -16,13 +21,11 @@
         [panningEnabled]="false"
         [autoZoom]="true"
         [autoCenter]="true"
-
         [zoomToFit$]="zoomToFit$"
         (mouseenter)="stopEvent($event)"
         (mouseleave)="stopEvent($event)"
         [panOnZoom]="false"
         [animate]="false"
-
 >
     <ng-template #defsTemplate>
         <svg:marker id="arrow" viewBox="0 -5 10 10" refX="8" refY="0" markerWidth="4" markerHeight="4" orient="auto">
