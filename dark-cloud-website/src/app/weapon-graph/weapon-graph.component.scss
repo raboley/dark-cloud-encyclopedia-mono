@@ -44,6 +44,7 @@
   width: 100vw;
   margin: 0;
   padding: 0; /* Ensure no padding */
+  overflow: auto; /* Allow scrolling */
 }
 
 .chart-container {
@@ -51,6 +52,7 @@
   height: 100%;
   cursor: default; /* Ensure the cursor does not indicate panning */
   pointer-events: none;
+  overflow: auto; /* Allow scrolling */
 }
 
 .graph .panning-rect {
