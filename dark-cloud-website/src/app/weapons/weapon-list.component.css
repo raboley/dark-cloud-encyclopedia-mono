@@ -4,6 +4,12 @@ thead {
 thead th {
   text-align: center; /* Center the text in the table header cells */
 }
+
+.tier-cell {
+  text-align: center; /* Center the text */
+  font-size: 1.2em; /* Make the text a bit bigger */
+  vertical-align: middle; /* Center the text vertically */
+}
 .weapon-cell, .character-cell {
   text-align: center; /* Center the text */
   height: 100%; /* Ensure the cell takes the full height of the row */
