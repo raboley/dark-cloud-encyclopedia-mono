@@ -25,9 +25,9 @@ import { ImageModalModule } from "./image-modal/image-modal.module";
   ],
   imports: [
     RouterModule.forRoot([
-      { path: "welcome", component: WelcomeComponent },
-      { path: "", redirectTo: "welcome", pathMatch: "full" },
-      { path: "**", redirectTo: "welcome", pathMatch: "full" },
+      { path: "weapon-graph", component: WeaponGraphComponent },
+      { path: "", redirectTo: "weapon-graph", pathMatch: "full" },
+      { path: "**", redirectTo: "weapon-graph", pathMatch: "full" },
     ]),
     BrowserModule,
     HttpClientModule,

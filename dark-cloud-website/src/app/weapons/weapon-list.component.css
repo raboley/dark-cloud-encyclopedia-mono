@@ -26,6 +26,7 @@ thead th {
   display: flex;
   align-items: center;
   gap: 10px; /* Add some space between the images */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .character-portrait.grayscale {
