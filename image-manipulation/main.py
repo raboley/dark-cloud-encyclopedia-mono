@@ -1,13 +1,16 @@
 from PIL import Image
 import os
-
 # Define input and output folders
 input_folder = '../categorize-images/all_images/output'
+middle_folder = './crop/output/'
 output_folder = '../dark-cloud-website/src/api/weapons/images/'
 
 # Create output folder if it doesn't exist
+if not os.path.exists(middle_folder):
+    print("Creating middle_folder folder: " + middle_folder)
+    os.makedirs(middle_folder)
 if not os.path.exists(output_folder):
-    print("Creating output folder: " + output_folder)
+    print("Creating output_folder folder: " + output_folder)
     os.makedirs(output_folder)
 
 def crop_out_black_bars(image):
@@ -82,6 +85,22 @@ def process_images(input_folder, output_folder):
             input_path = os.path.join(input_folder, file_name)
             process_single_image(input_path, output_folder)
 
+
+def optimize_image(input_path, output_path, quality=75):
+    with Image.open(input_path) as img:
+        img.save(output_path, optimize=True, quality=quality)
+
+def optimize_images_in_directory(directory, output_directory, quality=75):
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+
+    for filename in os.listdir(directory):
+        if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
+            input_path = os.path.join(directory, filename)
+            output_path = os.path.join(output_directory, filename)
+            optimize_image(input_path, output_path, quality)
+            print(f'Optimized {filename}')
+
 if __name__ == '__main__':
     import sys
 
@@ -89,11 +108,12 @@ if __name__ == '__main__':
         test_image_name = "Toan_Mardan_Eins_Side1.jpg"
         test_image_path = os.path.join(input_folder, test_image_name)
 
-        cropped_image, thumbnail_image = process_single_image(test_image_path, output_folder)
+        cropped_image, thumbnail_image = process_single_image(test_image_path, middle_folder)
 
         # Show the resulting images
         cropped_image.show()
         if thumbnail_image:
             thumbnail_image.show()
     else:
-        process_images(input_folder, output_folder)
+        process_images(input_folder, middle_folder)
+        optimize_images_in_directory(middle_folder, output_folder)

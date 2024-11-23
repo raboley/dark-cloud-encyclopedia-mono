@@ -20,7 +20,7 @@ import { WeaponGraphComponent } from './weapon-graph/weapon-graph.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pageTitle = 'Dark Cloud Encyclopedia';
+  pageTitle = 'Dark Cloud Weapons';
   @ViewChild(WeaponGraphComponent) graphRef: WeaponGraphComponent;
   zoomToFit$ = new Subject<{ autoCenter: boolean, force: boolean }>();
   isLoading = true;
