@@ -45,7 +45,12 @@
                 {{ weapon.weaponName }}
               </a>
             </td>
-            <td>{{ weapon.characterName}}</td>
+            <td>
+              <img [src]="'./api/characters/' + weapon.characterName + '.jpg'"
+                   [alt]="weapon.characterName"
+                   class="character-portrait">
+              {{ weapon.characterName }}
+            </td>
             <td>{{ weapon.tier }}</td>
             <td>{{ weapon.price | currency:'USD':'symbol':'1.2-2' }}</td>
           </tr>
