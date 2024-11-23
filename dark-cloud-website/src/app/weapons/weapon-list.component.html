@@ -17,9 +17,9 @@
                          [src]="'./api/characters/' + character + '.jpg'"
                          [alt]="character"
                          class='character-portrait'
-                         [class.grayscale]="selectedCharacter && selectedCharacter !== character"
-                         (click)='filterByCharacter(character)'>
-                    <button *ngIf='selectedCharacter'
+                         [class.grayscale]="selectedCharacters.length && !selectedCharacters.includes(character)"
+                         (click)='filterByCharacter(character, $event)'>
+                    <button *ngIf='selectedCharacters.length'
                             (click)='clearCharacterFilter()'
                             class='btn btn-primary'>
                         Clear Filter

@@ -14,7 +14,7 @@ export class WeaponListComponent implements OnInit {
   errorMessage = '';
   weaponUrlRoot: string = './api/weapons/images/';
   characters: string[] = ['Goro', 'Osmond', 'Ruby', 'Toan', 'Ungaga', 'Xiao'];
-  selectedCharacter: string | null = null;
+  selectedCharacters: string[] = [];
 
   _listFilter = '';
   get listFilter(): string {
@@ -40,20 +40,34 @@ export class WeaponListComponent implements OnInit {
       weapon.weaponName.toLocaleLowerCase().indexOf(filterBy) !== -1);
   }
 
-  filterByCharacter(character: string): void {
-    this.selectedCharacter = character;
-    this.filteredWeapons = this.weapons.filter((weapon: IWeapon) =>
-      weapon.characterName.toLocaleLowerCase() === character.toLocaleLowerCase());
+filterByCharacter(character: string, event: MouseEvent): void {
+  if (event.shiftKey) {
+    const index = this.selectedCharacters.indexOf(character);
+    if (index > -1) {
+      this.selectedCharacters.splice(index, 1); // Deselect if already selected
+    } else {
+      this.selectedCharacters.push(character); // Add to selection
+    }
+  } else {
+    this.selectedCharacters = [character]; // Single selection
   }
+  this.applyCharacterFilter();
+}
 
-  clearCharacterFilter(): void {
-    this.selectedCharacter = null;
+clearCharacterFilter(): void {
+  this.selectedCharacters = [];
+  this.applyCharacterFilter();
+}
+
+applyCharacterFilter(): void {
+  if (this.selectedCharacters.length === 0) {
     this.filteredWeapons = this.weapons;
+  } else {
+    this.filteredWeapons = this.weapons.filter(weapon =>
+      this.selectedCharacters.includes(weapon.characterName)
+    );
   }
-
-  toggleImage(): void {
-    this.showImage = !this.showImage;
-  }
+}
 
   ngOnInit(): void {
     this.weaponService.getWeapons().subscribe(
