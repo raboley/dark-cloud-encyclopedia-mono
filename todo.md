@@ -1,11 +1,11 @@
 # To get to production
 
 - [x] Make the weapon graph take up the full screen size
-- [ ] Make the images for thumbnails bigger on the list page
-- [ ] Make it obvious whose weapon it is on the weapons page.
+- [x] Make the images for thumbnails bigger on the list page
+- [x] Make it obvious whose weapon it is on the weapons page.
 - [ ] Host website on github pages
 - [ ] Figure out how to get the images to store in github pages
-- [ ] Make the character select, be square portraits of the charactesr for the filter
+- [x] Make the character select, be square portraits of the charactesr for the filter
 - [ ] Finish making sure the weapon graph looks good for each character
   - [ ] Toan
   - [ ] Xiao
