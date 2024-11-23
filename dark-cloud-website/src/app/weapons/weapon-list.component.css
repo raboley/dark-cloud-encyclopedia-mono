@@ -21,3 +21,17 @@ thead th {
   object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
   margin-bottom: 5px; /* Add some space between the image and the text */
 }
+
+.character-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add some space between the images */
+}
+
+.character-portrait.grayscale {
+  filter: grayscale(100%);
+}
+
+.row.align-items-center {
+  align-items: center; /* Vertically center the items in the row */
+}

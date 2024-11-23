@@ -13,6 +13,8 @@ export class WeaponListComponent implements OnInit {
   showImage = true;
   errorMessage = '';
   weaponUrlRoot: string = './api/weapons/images/';
+  characters: string[] = ['Goro', 'Osmond', 'Ruby', 'Toan', 'Ungaga', 'Xiao'];
+  selectedCharacter: string | null = null;
 
   _listFilter = '';
   get listFilter(): string {
@@ -36,6 +38,17 @@ export class WeaponListComponent implements OnInit {
     filterBy = filterBy.toLocaleLowerCase();
     return this.weapons.filter((weapon: IWeapon) =>
       weapon.weaponName.toLocaleLowerCase().indexOf(filterBy) !== -1);
+  }
+
+  filterByCharacter(character: string): void {
+    this.selectedCharacter = character;
+    this.filteredWeapons = this.weapons.filter((weapon: IWeapon) =>
+      weapon.characterName.toLocaleLowerCase() === character.toLocaleLowerCase());
+  }
+
+  clearCharacterFilter(): void {
+    this.selectedCharacter = null;
+    this.filteredWeapons = this.weapons;
   }
 
   toggleImage(): void {

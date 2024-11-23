@@ -3,11 +3,28 @@
         {{ pageTitle }}
     </div>
     <div class='card-body'>
-        <div class='row'>
-            <div class='col-md-2'>Filter by:</div>
+        <div class='row align-items-center'>
+            <div class='col-md-2'>Filter By Weapon Name:</div>
             <div class='col-md-4'>
                 <input type='text'
-                       [(ngModel)]='listFilter'/>
+                       [(ngModel)]='listFilter'
+                       class='form-control'/>
+            </div>
+            <div class='col-md-6'>
+                <div class='character-filter'>
+                    <label>Filter By Character:</label>
+                    <img *ngFor='let character of characters'
+                         [src]="'./api/characters/' + character + '.jpg'"
+                         [alt]="character"
+                         class='character-portrait'
+                         [class.grayscale]="selectedCharacter && selectedCharacter !== character"
+                         (click)='filterByCharacter(character)'>
+                    <button *ngIf='selectedCharacter'
+                            (click)='clearCharacterFilter()'
+                            class='btn btn-primary'>
+                        Clear Filter
+                    </button>
+                </div>
             </div>
         </div>
         <div class='row'
@@ -21,7 +38,6 @@
                    *ngIf='weapons && weapons.length'>
                 <thead>
                 <tr>
-
                     <th>Weapon</th>
                     <th>Character</th>
                     <th>Buildup Tier</th>
@@ -51,7 +67,6 @@
                             {{ weapon.tier }}
                         </div>
                     </td>
-
                 </tr>
                 </tbody>
             </table>
