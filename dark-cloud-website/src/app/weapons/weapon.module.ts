@@ -6,7 +6,6 @@ import { WeaponDetailComponent } from './weapon-detail.component';
 import { ConvertToSpacesPipe } from '../shared/convert-to-spaces.pipe';
 import { WeaponDetailGuard } from './weapon-detail.guard';
 import { SharedModule } from '../shared/shared.module';
-import { WeaponDetailImagesComponent } from './weapon-detail-images/weapon-detail-images.component';
 import { ImageModalModule } from '../image-modal/image-modal.module';
 
 
@@ -27,7 +26,6 @@ import { ImageModalModule } from '../image-modal/image-modal.module';
     WeaponListComponent,
     WeaponDetailComponent,
     ConvertToSpacesPipe,
-    WeaponDetailImagesComponent,
   ]
 })
 export class WeaponModule { }
