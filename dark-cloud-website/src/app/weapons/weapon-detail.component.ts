@@ -5,6 +5,7 @@ import { WeaponService } from './weapon.service';
 import { ImageModalComponent } from '../image-modal/image-modal.component';
 
 @Component({
+  selector: 'pm-weapon-detail',
   templateUrl: './weapon-detail.component.html',
   styleUrls: ['./weapon-detail.component.css']
 })
@@ -14,7 +15,7 @@ export class WeaponDetailComponent implements OnInit {
   errorMessage = '';
   weapon: IWeapon | undefined;
   weaponUrl: string;
-  weaponUrlRoot: string = './api/weapons/images/';
+  weaponUrlRoot = './api/weapons/images/';
   weaponUrls: Array<{url: string, altText: string}>;
   weaponUrlTypes = {
     stats: 'Stats.jpg',
@@ -46,9 +47,9 @@ export class WeaponDetailComponent implements OnInit {
 
   getWeaponUrls(weapon: IWeapon) {
     this.weaponUrls = [];
-    for (let key in this.weaponUrlTypes) {
-      let weaponUrlType = this.weaponUrlTypes[key];
-      let weaponPathName = this.weapon.weaponName.replace(" ", "_").replace(" ", "_");
+    for (const key in this.weaponUrlTypes) {
+      const weaponUrlType = this.weaponUrlTypes[key];
+      const weaponPathName = this.weapon.weaponName.replace(' ', '_').replace(' ', '_');
       this.weaponUrls.push({
         url: `${this.weaponUrlRoot}${this.weapon.characterName}_${weaponPathName}_${weaponUrlType}`,
         altText: `${this.weapon.characterName}_${weaponPathName}_${weaponUrlType}`

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { IWeapon } from '../weapon';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WeaponService } from '../weapon.service';
@@ -6,7 +6,8 @@ import { WeaponService } from '../weapon.service';
 @Component({
   selector: 'pm-weapon-detail-images',
   templateUrl: './weapon-detail-images.component.html',
-  styleUrls: ['./weapon-detail-images.component.css']
+  styleUrls: ['./weapon-detail-images.component.css'],
+  encapsulation: ViewEncapsulation.Emulated // Add this line
 })
 export class WeaponDetailImagesComponent implements OnInit {
   pageTitle = 'Weapon Detail';
