@@ -52,3 +52,11 @@ thead th {
 .weapon-link:hover {
   text-decoration: underline; /* Optional: Add underline on hover */
 }
+
+.weapon-link div {
+  color: #337AB7; /* Set the text color to blue */
+}
+
+.weapon-link div:hover {
+  text-decoration: underline; /* Ensure underline remains on hover */
+}
