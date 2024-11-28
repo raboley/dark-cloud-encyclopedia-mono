@@ -29,6 +29,10 @@ jobs:
         run: npm run build -- --prod
         working-directory: ./dark-cloud-website
 
+      - name: Create 404.html
+        run: cp ./dist/APM/index.html ./dist/APM/404.html
+        working-directory: ./dark-cloud-website
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
