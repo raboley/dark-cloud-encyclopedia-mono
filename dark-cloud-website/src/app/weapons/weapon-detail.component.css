@@ -12,3 +12,7 @@
     padding: 5px; /* Optional: Add some padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
+
+.card-body .row > div {
+    padding: 10px;
+}
