@@ -2,9 +2,10 @@ import { Component, OnInit, AfterViewInit, ChangeDetectorRef } from '@angular/co
 import { HttpClient } from '@angular/common/http';
 import * as shape from 'd3-shape';
 import { Subject } from 'rxjs';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'weapon-graph',
+  selector: 'pm-weapon-graph',
   templateUrl: './weapon-graph.component.html',
   styleUrls: ['./weapon-graph.component.scss']
 })
@@ -13,18 +14,28 @@ export class WeaponGraphComponent implements OnInit, AfterViewInit {
   hierarchialGraph = { nodes: [], links: [] };
   curve = shape.curveBundle.beta(1);
   weaponUrlRoot = './api/weapons/images/';
-  characters = ['Toan', 'Osmond', 'Xiao'];
+  characters = ['Toan', 'Goro', 'Ruby', 'Ungaga', 'Osmond', 'Xiao'];
   selectedCharacter = this.characters[0];
   weaponGraphs: any = {};
   zoomToFit$ = new Subject<boolean>();
 
-  constructor(private http: HttpClient, private cdr: ChangeDetectorRef) {}
-filterByCharacter(character: string): void {
-  this.selectedCharacter = character;
-  this.showGraph();
-}
+  constructor(
+    private http: HttpClient,
+    private cdr: ChangeDetectorRef,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
+
   ngOnInit(): void {
-    this.loadConfig();
+    this.route.queryParams.subscribe(params => {
+      const character = params['character'];
+      console.log('character', character);
+      if (character && this.characters.includes(character)) {
+        console.log('Setting selected character to', character);
+        this.selectedCharacter = character;
+      }
+      this.loadConfig();
+    });
   }
 
   ngAfterViewInit(): void {
@@ -45,18 +56,27 @@ filterByCharacter(character: string): void {
     this.http.get('./assets/weapon-graphs.json').subscribe(graphs => {
       this.weaponGraphs = graphs;
       this.characters = Object.keys(this.weaponGraphs);
-      this.selectedCharacter = this.characters[0];
+      console.log('selected character', this.selectedCharacter);
+      if (!this.characters.includes(this.selectedCharacter)) {
+        console.log('Character {} not found, defaulting to first character', this.selectedCharacter);
+        this.selectedCharacter = this.characters[0];
+      }
       this.showGraph();
     });
   }
 
-  onCharacterChange(event: Event): void {
-    const selectElement = event.target as HTMLSelectElement;
-    this.selectedCharacter = selectElement.value;
-    this.showGraph();
+  onCharacterChange(character: string): void {
+    this.selectedCharacter = character;
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { character: this.selectedCharacter },
+      queryParamsHandling: 'merge'
+    }).then(() => {
+      this.showGraph();
+    });
   }
 
-  showGraph() {
+  showGraph(): void {
     console.log('selectedCharacter', this.selectedCharacter);
     const graph = this.weaponGraphs[this.selectedCharacter];
     if (graph) {

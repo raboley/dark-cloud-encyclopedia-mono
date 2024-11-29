@@ -39,7 +39,13 @@
       { "id": "12", "label": "Claymore", "position": "x12", "weaponThumbnail": "Toan_Claymore_Thumbnail.jpg" },
       { "id": "20", "label": "Cross Hinder", "position": "x20", "weaponThumbnail": "Toan_Cross_Hinder_Thumbnail.jpg" },
       { "id": "29", "label": "Big Bang", "position": "x29", "weaponThumbnail": "Toan_Big_Bang_Thumbnail.jpg" },
-      { "id": "31", "label": "Sword Of Zeus", "position": "x31", "weaponThumbnail": "Toan_Sword_Of_Zeus_Thumbnail.jpg" }
+      { "id": "31", "label": "Sword Of Zeus", "position": "x31", "weaponThumbnail": "Toan_Sword_Of_Zeus_Thumbnail.jpg" },
+
+      { "id": "Mardan_Eins", "label": "Mardan Eins", "position": "x35", "weaponThumbnail": "Toan_Mardan_Eins_Thumbnail.jpg" },
+      { "id": "Mardan_Twei", "label": "Mardan Twei", "position": "x36", "weaponThumbnail": "Toan_Mardan_Twei_Thumbnail.jpg" },
+      { "id": "Arise_Mardan", "label": "Arise Mardan", "position": "x33", "weaponThumbnail": "Toan_Arise_Mardan_Thumbnail.jpg" },
+
+      { "id": "34", "label": "Chronicle 2", "position": "x34", "weaponThumbnail": "Toan_Chronicle_2_Thumbnail.jpg" }
     ],
     "links": [
       { "source": "start1", "target": "Sax", "label": "Process#1" },
@@ -80,7 +86,10 @@
       { "source": "start4", "target": "12" },
       { "source": "12", "target": "20", "label": "Process#21" },
       { "source": "20", "target": "29", "label": "Process#29" },
-      { "source": "29", "target": "31", "label": "Process#37" }
+      { "source": "29", "target": "31", "label": "Process#37" },
+
+      { "source": "Mardan_Eins", "target": "Mardan_Twei", "label": "Process#21" },
+      { "source": "Mardan_Twei", "target": "Arise_Mardan", "label": "Process#29" }
     ]
   },
   "Xiao": {
@@ -135,9 +144,12 @@
     "links": [
       { "source": "start", "target": "1", "label": "Process#1" },
       { "source": "2", "target": "3", "label": "Process#2" },
-      { "source": "4", "target": "5", "label": "Process#3" },
-      { "source": "3", "target": "5", "label": "Process#4" },
       { "source": "7", "target": "6", "label": "Process#5" },
+
+      { "source": "4", "target": "5", "label": "Process#3" },
+      { "source": "4", "target": "6", "label": "Process#3" },
+      { "source": "3", "target": "5", "label": "Process#4" },
+
       { "source": "1", "target": "5", "label": "Process#6" },
       { "source": "1", "target": "8", "label": "Process#7" },
       { "source": "8", "target": "9", "label": "Process#8" },
@@ -194,11 +206,16 @@
       { "id": "10", "label": "Babel's Spear", "position": "x10", "weaponThumbnail": "Ungaga_Babel's_Spear_Thumbnail.jpg" }
     ],
     "links": [
-      { "source": "start", "target": "1", "label": "Process#1" },
-      { "source": "start", "target": "2", "label": "Process#2" },
-      { "source": "3", "target": "1", "label": "Process#3" },
+
+
       { "source": "4", "target": "5", "label": "Process#4" },
       { "source": "4", "target": "2", "label": "Process#5" },
+
+      { "source": "start", "target": "1", "label": "Process#1" },
+      { "source": "start", "target": "2", "label": "Process#2" },
+
+      { "source": "3", "target": "1", "label": "Process#3" },
+
       { "source": "5", "target": "6", "label": "Process#6" },
       { "source": "2", "target": "6", "label": "Process#7" },
       { "source": "1", "target": "7", "label": "Process#8" },
