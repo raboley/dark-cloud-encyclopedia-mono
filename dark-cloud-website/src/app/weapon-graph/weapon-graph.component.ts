@@ -35,8 +35,21 @@ export class WeaponGraphComponent implements OnInit, AfterViewInit {
         this.selectedCharacter = character;
       }
       this.loadConfig();
+      this.setHostHeight(); // Set the height based on the selected character
     });
   }
+
+  setHostHeight(): void {
+  const hostElement = document.querySelector('pm-weapon-graph');
+  if (hostElement) {
+    if (this.selectedCharacter === 'Toan') {
+      hostElement.style.height = '1200px';
+    } else {
+      hostElement.style.height = '100vh'; // Default height for other characters
+    }
+  }
+}
+
 
   ngAfterViewInit(): void {
     setTimeout(() => {

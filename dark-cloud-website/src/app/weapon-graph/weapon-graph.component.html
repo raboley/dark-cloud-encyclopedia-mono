@@ -18,7 +18,7 @@
         [draggingEnabled]="false"
         [zoomLevel]=".9"
         [enableZoom]="false"
-        [panningEnabled]="false"
+        [panningEnabled]="true"
         [autoZoom]="true"
         [autoCenter]="true"
         [zoomToFit$]="zoomToFit$"
@@ -26,6 +26,7 @@
         (mouseleave)="stopEvent($event)"
         [panOnZoom]="false"
         [animate]="false"
+
 >
     <ng-template #defsTemplate>
         <svg:marker id="arrow" viewBox="0 -5 10 10" refX="8" refY="0" markerWidth="4" markerHeight="4" orient="auto">
