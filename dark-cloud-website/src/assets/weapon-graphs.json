@@ -6,6 +6,9 @@
       { "id": "Atlamilla_Sword2", "label": "Atlamilla Sword", "position": "x10", "weaponThumbnail": "Toan_Atlamilla_Sword_Thumbnail.jpg" },
       { "id": "Chronicle_Sword2", "label": "Chronicle Sword", "position": "x10", "weaponThumbnail": "Toan_Chronicle_Sword_Thumbnail.jpg" },
 
+      { "id": "Wise_Owl_Sword", "label": "Wise Owl Sword", "position": "x24", "weaponThumbnail": "Toan_Wise_Owl_Sword_Thumbnail.jpg" },
+      { "id": "Lambs_Sword", "label": "Lamb's Sword", "position": "x25", "weaponThumbnail": "Toan_Lamb's_Sword_Thumbnail.jpg" },
+
       { "id": "start1", "label": "Baselard", "position": "x0", "weaponThumbnail": "Toan_Baselard_Thumbnail.jpg" },
       { "id": "Sax", "label": "Sax", "position": "x1", "weaponThumbnail": "Toan_Sax_Thumbnail.jpg" },
       { "id": "Shamshir", "label": "Shamshir", "position": "x2", "weaponThumbnail": "Toan_Shamshir_Thumbnail.jpg" },
@@ -92,7 +95,8 @@
       { "source": "Agas_Sword", "target": "Atlamilla_Sword2", "label": "Process#3" },
       { "source": "Atlamilla_Sword2", "target": "Chronicle_Sword2", "label": "Process#3" },
 
-
+      { "source": "Wise_Owl_Sword", "target": "Lambs_Sword", "label": "Process#3" },
+      { "source": "Lambs_Sword", "target": "Atlamilla_Sword2", "label": "Process#3" },
 
       { "source": "start4", "target": "12" },
       { "source": "12", "target": "20", "label": "Process#21" },
