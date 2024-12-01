@@ -1,6 +1,8 @@
 {
   "Toan": {
     "nodes": [
+      { "id": "37", "label": "Sun Sword", "position": "x37", "weaponThumbnail": "Toan_Sun_Sword_Thumbnail.jpg" },
+
       { "id": "Macho_Sword", "label": "Macho Sword", "position": "x10", "weaponThumbnail": "Toan_Macho_Sword_Thumbnail.jpg" },
       { "id": "Agas_Sword", "label": "Aga's Sword", "position": "x11", "weaponThumbnail": "Toan_Aga's_Sword_Thumbnail.jpg" },
       { "id": "Atlamilla_Sword2", "label": "Atlamilla Sword", "position": "x10", "weaponThumbnail": "Toan_Atlamilla_Sword_Thumbnail.jpg" },
@@ -106,6 +108,7 @@
       { "source": "Wise_Owl_Sword", "target": "Lambs_Sword", "label": "Process#3" },
       { "source": "Lambs_Sword", "target": "Atlamilla_Sword2", "label": "Process#3" },
 
+      { "source": "37", "target": "29", "label": "Process#3" },
 
 
 
