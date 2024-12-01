@@ -9,6 +9,10 @@
       { "id": "Wise_Owl_Sword", "label": "Wise Owl Sword", "position": "x24", "weaponThumbnail": "Toan_Wise_Owl_Sword_Thumbnail.jpg" },
       { "id": "Lambs_Sword", "label": "Lamb's Sword", "position": "x25", "weaponThumbnail": "Toan_Lamb's_Sword_Thumbnail.jpg" },
 
+      { "id": "Bone_Rapier", "label": "Bone Rapier", "position": "x9", "weaponThumbnail": "Toan_Bone_Rapier_Thumbnail.jpg" },
+      { "id": "Evilcise", "label": "Evilcise", "position": "x10", "weaponThumbnail": "Toan_Evilcise_Thumbnail.jpg" },
+      { "id": "Drain_Seeker", "label": "Drain Seeker", "position": "x21", "weaponThumbnail": "Toan_Drain_Seeker_Thumbnail.jpg" },
+
       { "id": "start1", "label": "Baselard", "position": "x0", "weaponThumbnail": "Toan_Baselard_Thumbnail.jpg" },
       { "id": "Sax", "label": "Sax", "position": "x1", "weaponThumbnail": "Toan_Sax_Thumbnail.jpg" },
       { "id": "Shamshir", "label": "Shamshir", "position": "x2", "weaponThumbnail": "Toan_Shamshir_Thumbnail.jpg" },
@@ -56,6 +60,10 @@
       { "id": "34", "label": "Chronicle 2", "position": "x34", "weaponThumbnail": "Toan_Chronicle_2_Thumbnail.jpg" }
     ],
     "links": [
+      { "source": "Bone_Rapier", "target": "Evilcise", "label": "Process#3" },
+      { "source": "Evilcise", "target": "Drain_Seeker", "label": "Process#3" },
+      { "source": "Drain_Seeker", "target": "Dark_Cloud2", "label": "Process#3" },
+
       { "source": "start1", "target": "Sax", "label": "Process#1" },
       { "source": "start1", "target": "Shamshir", "label": "Process#2" },
 
@@ -97,6 +105,9 @@
 
       { "source": "Wise_Owl_Sword", "target": "Lambs_Sword", "label": "Process#3" },
       { "source": "Lambs_Sword", "target": "Atlamilla_Sword2", "label": "Process#3" },
+
+
+
 
       { "source": "start4", "target": "12" },
       { "source": "12", "target": "20", "label": "Process#21" },
