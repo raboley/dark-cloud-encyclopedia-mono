@@ -75,6 +75,7 @@ export class WeaponGraphComponent implements OnInit, AfterViewInit {
         this.selectedCharacter = this.characters[0];
       }
       this.showGraph();
+      this.setHostHeight(); // Set the height based on the selected character
     });
   }
 
