@@ -1,31 +1,23 @@
 <div class='card' *ngIf='weapon'>
-
     <div class='card-header'>
-        <button class='btn btn-outline-secondary'
-                (click)='onBack()'
-                style='width:80px'>
+        <button class='btn btn-outline-secondary' (click)='onBack()' style='width:80px'>
             <i class='fa fa-chevron-left'></i> Back
         </button>
         {{ pageTitle }}: <strong>{{ weapon.weaponName }}</strong>
+        <button class='btn btn-outline-secondary' (click)='goToNextWeapon()' style='width:80px; float: right;'>
+            Next <i class='fa fa-chevron-right'></i>
+        </button>
+        <button class='btn btn-outline-secondary' (click)='goToPreviousWeapon()' style='width:120px; float: right; margin-left: 10px; margin-right: 10px;'>
+            <i class='fa fa-chevron-left'></i> Previous
+        </button>
     </div>
-
     <div class='card-body'>
         <div class='row'>
-
-
             <div *ngFor='let weaponUrl of weaponUrls'>
-                <img class='center-block img-responsive'
-                     [src]='weaponUrl.url'
-                     [title]='weaponUrl.altText'
-                     (click)='openModal(weaponUrl.url, weaponUrl.altText)'>
+                <img class='center-block img-responsive' [src]='weaponUrl.url' [title]='weaponUrl.altText' (click)='openModal(weaponUrl.url, weaponUrl.altText)'>
             </div>
-
         </div>
     </div>
-
-    <div class='card-footer'>
-
-    </div>
+    <div class='card-footer'></div>
 </div>
-
 <app-image-modal #imageModal></app-image-modal>

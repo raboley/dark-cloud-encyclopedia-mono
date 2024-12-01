@@ -10,13 +10,13 @@ import { IWeapon } from './weapon';
 })
 export class WeaponService {
   private weaponUrl = 'api/weapons/weapons.json';
+  private weapons: IWeapon[] = [];
 
   constructor(private http: HttpClient) { }
 
   getWeapons(): Observable<IWeapon[]> {
     return this.http.get<IWeapon[]>(this.weaponUrl).pipe(
-      
-     // tap(data => console.log('All: ' + JSON.stringify(data))),
+      tap(data => this.weapons = data), // Store the weapons
       catchError(this.handleError)
     );
   }
@@ -27,16 +27,27 @@ export class WeaponService {
     );
   }
 
+  getNextWeaponId(currentWeaponId: number): number | null {
+    const currentIndex = this.weapons.findIndex(weapon => weapon.weaponId === currentWeaponId);
+    if (currentIndex !== -1 && currentIndex < this.weapons.length - 1) {
+      return this.weapons[currentIndex + 1].weaponId;
+    }
+    return null;
+  }
+
+  getPreviousWeaponId(currentWeaponId: number): number | null {
+  const currentIndex = this.weapons.findIndex(weapon => weapon.weaponId === currentWeaponId);
+  if (currentIndex > 0) {
+    return this.weapons[currentIndex - 1].weaponId;
+  }
+  return null;
+}
+
   private handleError(err: HttpErrorResponse) {
-    // in a real world app, we may send the server to some remote logging infrastructure
-    // instead of just logging it to the console
     let errorMessage = '';
     if (err.error instanceof ErrorEvent) {
-      // A client-side or network error occurred. Handle it accordingly.
       errorMessage = `An error occurred: ${err.error.message}`;
     } else {
-      // The backend returned an unsuccessful response code.
-      // The response body may contain clues as to what went wrong,
       errorMessage = `Server returned code: ${err.status}, error message is: ${err.message}`;
     }
     console.error(errorMessage);

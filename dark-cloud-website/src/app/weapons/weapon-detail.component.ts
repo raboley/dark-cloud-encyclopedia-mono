@@ -28,13 +28,33 @@ export class WeaponDetailComponent implements OnInit {
               private router: Router,
               private weaponService: WeaponService) { }
 
-  ngOnInit() {
-    const param = this.route.snapshot.paramMap.get('id');
-    if (param) {
-      const id = +param;
+ngOnInit() {
+  this.route.paramMap.subscribe(params => {
+    const id = +params.get('id');
+    if (id) {
       this.getWeapon(id);
     }
+  });
+}
+
+goToPreviousWeapon(): void {
+  if (this.weapon) {
+    const previousWeaponId = this.weaponService.getPreviousWeaponId(this.weapon.weaponId);
+    if (previousWeaponId !== null) {
+      this.router.navigate(['/weapons', previousWeaponId]);
+    }
   }
+}
+  goToNextWeapon(): void {
+  if (this.weapon) {
+    console.log('Current weapon:', this.weapon);
+    const nextWeaponId = this.weaponService.getNextWeaponId(this.weapon.weaponId);
+    console.log('Next weapon ID:', nextWeaponId);
+    if (nextWeaponId !== null) {
+      this.router.navigate(['/weapons', nextWeaponId]);
+    }
+  }
+}
 
   getWeapon(id: number) {
     this.weaponService.getWeapon(id).subscribe(
