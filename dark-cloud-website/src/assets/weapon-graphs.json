@@ -1,6 +1,11 @@
 {
   "Toan": {
     "nodes": [
+      { "id": "Macho_Sword", "label": "Macho Sword", "position": "x10", "weaponThumbnail": "Toan_Macho_Sword_Thumbnail.jpg" },
+      { "id": "Agas_Sword", "label": "Aga's Sword", "position": "x11", "weaponThumbnail": "Toan_Aga's_Sword_Thumbnail.jpg" },
+      { "id": "Atlamilla_Sword2", "label": "Atlamilla Sword", "position": "x10", "weaponThumbnail": "Toan_Atlamilla_Sword_Thumbnail.jpg" },
+      { "id": "Chronicle_Sword2", "label": "Chronicle Sword", "position": "x10", "weaponThumbnail": "Toan_Chronicle_Sword_Thumbnail.jpg" },
+
       { "id": "start1", "label": "Baselard", "position": "x0", "weaponThumbnail": "Toan_Baselard_Thumbnail.jpg" },
       { "id": "Sax", "label": "Sax", "position": "x1", "weaponThumbnail": "Toan_Sax_Thumbnail.jpg" },
       { "id": "Shamshir", "label": "Shamshir", "position": "x2", "weaponThumbnail": "Toan_Shamshir_Thumbnail.jpg" },
@@ -83,8 +88,15 @@
       { "source": "Maneater", "target": "Atlamilla_Sword", "label": "Process#3" },
       { "source": "Atlamilla_Sword", "target": "Chronicle_Sword", "label": "Process#3" },
 
+      { "source": "Macho_Sword", "target": "Agas_Sword", "label": "Process#3" },
+      { "source": "Agas_Sword", "target": "Atlamilla_Sword2", "label": "Process#3" },
+      { "source": "Atlamilla_Sword2", "target": "Chronicle_Sword2", "label": "Process#3" },
+
+
+
       { "source": "start4", "target": "12" },
       { "source": "12", "target": "20", "label": "Process#21" },
+      { "source": "Macho_Sword", "target": "20", "label": "Process#3" },
       { "source": "20", "target": "29", "label": "Process#29" },
       { "source": "29", "target": "31", "label": "Process#37" },
 

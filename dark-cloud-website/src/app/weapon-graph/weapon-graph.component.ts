@@ -43,7 +43,7 @@ export class WeaponGraphComponent implements OnInit, AfterViewInit {
   const hostElement = document.querySelector('pm-weapon-graph');
   if (hostElement) {
     if (this.selectedCharacter === 'Toan') {
-      hostElement.style.height = '1200px';
+      hostElement.style.height = '2000px';
     } else {
       hostElement.style.height = '100vh'; // Default height for other characters
     }
