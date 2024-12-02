@@ -39,8 +39,8 @@ export class WeaponGraphComponent implements OnInit, AfterViewInit {
     });
   }
 
-  setHostHeight(): void {
-  const hostElement = document.querySelector('pm-weapon-graph');
+setHostHeight(): void {
+  const hostElement = document.querySelector('pm-weapon-graph') as HTMLElement;
   if (hostElement) {
     if (this.selectedCharacter === 'Toan') {
       hostElement.style.height = '2000px';
