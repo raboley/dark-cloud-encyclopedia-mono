@@ -1,3 +1,9 @@
+.card-body .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
 .center-block {
     display: block;
     margin-left: auto;
@@ -11,8 +17,4 @@
     border-radius: 4px; /* Optional: Add rounded corners */
     padding: 5px; /* Optional: Add some padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-}
-
-.card-body .row > div {
-    padding: 10px;
 }
