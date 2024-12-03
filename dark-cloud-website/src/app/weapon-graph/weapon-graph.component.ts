@@ -47,6 +47,7 @@ setHostHeight(): void {
     } else {
       hostElement.style.height = '100vh'; // Default height for other characters
     }
+    window.dispatchEvent(new Event('resize')); // Trigger resize event
   }
 }
 

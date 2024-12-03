@@ -23,7 +23,7 @@
       { "id": "Dark_Cloud2", "label": "Dark Cloud", "position": "x28", "weaponThumbnail": "Toan_Dark_Cloud_Thumbnail.jpg" },
       { "id": "7th_Heaven2", "label": "7th Heaven", "position": "x32", "weaponThumbnail": "Toan_7th_Heaven_Thumbnail.jpg" },
 
-      { "id": "start2", "label": "Kitchen Knife", "position": "x8", "weaponThumbnail": "Toan_Kitchen_Knife_Thumbnail.jpg" },
+      { "id": "start2", "label": "Kitchen Knife", "position": "x8", "weaponThumbnail": "Toan_Kitchen_Knife_Thumbnail.jpg", "abilities": ["quench"] },
 
       { "id": "Gladius", "label": "Gladius", "position": "x6", "weaponThumbnail": "Toan_Gladius_Thumbnail.jpg" },
       { "id": "Chopper", "label": "Chopper", "position": "x7", "weaponThumbnail": "Toan_Chopper_Thumbnail.jpg" },
@@ -35,7 +35,7 @@
       { "id": "Crysknife", "label": "Crysknife", "position": "x3", "weaponThumbnail": "Toan_Crysknife_Thumbnail.jpg" },
 
 
-      { "id": "sb1", "label": "Sand Breaker", "position": "x5", "weaponThumbnail": "Toan_Sand_Breaker_Thumbnail.jpg" },
+      { "id": "sb1", "label": "Sand Breaker", "position": "x5", "weaponThumbnail": "Toan_Sand_Breaker_Thumbnail.jpg", "abilities": ["thirst"] },
       { "id": "Maneater", "label": "Maneater", "position": "x19", "weaponThumbnail": "Toan_Maneater_Thumbnail.jpg" },
       { "id": "Heavens_Cloud", "label": "Heaven's Cloud", "position": "x18", "weaponThumbnail": "Toan_Heaven's_Cloud_Thumbnail.jpg" },
 
@@ -43,7 +43,7 @@
       { "id": "Bone_Rapier", "label": "Bone Rapier", "position": "x9", "weaponThumbnail": "Toan_Bone_Rapier_Thumbnail.jpg" },
       { "id": "Serpent_Sword", "label": "Serpent Sword", "position": "x21", "weaponThumbnail": "Toan_Serpent_Sword_Thumbnail.jpg" },
       { "id": "Evilcise", "label": "Evilcise", "position": "x10", "weaponThumbnail": "Toan_Evilcise_Thumbnail.jpg" },
-      { "id": "Drain_Seeker", "label": "Drain Seeker", "position": "x21", "weaponThumbnail": "Toan_Drain_Seeker_Thumbnail.jpg" },
+      { "id": "Drain_Seeker", "label": "Drain Seeker", "position": "x21", "weaponThumbnail": "Toan_Drain_Seeker_Thumbnail.jpg", "abilities": ["drain"] },
 
 
       { "id": "Atlamilla_Sword", "label": "Atlamilla Sword", "position": "x27", "weaponThumbnail": "Toan_Atlamilla_Sword_Thumbnail.jpg" },
@@ -51,7 +51,7 @@
 
 
 
-      { "id": "Antique_Sword", "label": "Antique Sword", "position": "x15", "weaponThumbnail": "Toan_Antique_Sword_Thumbnail.jpg" },
+      { "id": "Antique_Sword", "label": "Antique Sword", "position": "x15", "weaponThumbnail": "Toan_Antique_Sword_Thumbnail.jpg", "abilities": ["stop"] },
       { "id": "Brave_Ark", "label": "Brave Ark", "position": "x16", "weaponThumbnail": "Toan_Brave_Ark_Thumbnail.jpg" },
 
       { "id": "Dark_Cloud", "label": "Dark Cloud", "position": "x28", "weaponThumbnail": "Toan_Dark_Cloud_Thumbnail.jpg" },
@@ -142,7 +142,7 @@
   "Xiao": {
     "nodes": [
 
-      { "id": "start", "label": "Bandit Slingshot", "position": "x0", "weaponThumbnail": "Xiao_Bandit_Slingshot_Thumbnail.jpg" },
+      { "id": "start", "label": "Bandit Slingshot", "position": "x0", "weaponThumbnail": "Xiao_Bandit_Slingshot_Thumbnail.jpg", "abilities": ["steal"] },
       { "id": "1", "label": "Hardshooter", "position": "x1", "weaponThumbnail": "Xiao_Hardshooter_Thumbnail.jpg" },
       { "id": "2", "label": "Double Impact", "position": "x2", "weaponThumbnail": "Xiao_Double_Impact_Thumbnail.jpg" },
       { "id": "3", "label": "Bone Slingshot", "position": "x3", "weaponThumbnail": "Xiao_Bone_Slingshot_Thumbnail.jpg" },
@@ -151,7 +151,7 @@
       { "id": "6", "label": "Matador", "position": "x7", "weaponThumbnail": "Xiao_Matador_Thumbnail.jpg" },
       { "id": "7", "label": "Dragon's Y", "position": "x6", "weaponThumbnail": "Xiao_Dragon's_Y_Thumbnail.jpg" },
       { "id": "8", "label": "Divine Beast Title", "position": "x8", "weaponThumbnail": "Xiao_Divine_Beast_Title_Thumbnail.jpg" },
-      { "id": "9", "label": "Angel Shooter", "position": "x9", "weaponThumbnail": "Xiao_Angel_Shooter_Thumbnail.jpg" },
+      { "id": "9", "label": "Angel Shooter", "position": "x9", "weaponThumbnail": "Xiao_Angel_Shooter_Thumbnail.jpg", "abilities": ["heal"] },
       { "id": "10", "label": "Angel Gear", "position": "x10", "weaponThumbnail": "Xiao_Angel_Gear_Thumbnail.jpg" },
       { "id": "11", "label": "Steve", "position": "x11", "weaponThumbnail": "Xiao_Steve_Thumbnail.jpg" },
       { "id": "12", "label": "Super Steve", "position": "x12", "weaponThumbnail": "Xiao_Super_Steve_Thumbnail.jpg" }
@@ -178,10 +178,10 @@
       { "id": "1", "label": "Turtle Shell", "position": "x1", "weaponThumbnail": "Goro_Turtle_Shell_Thumbnail.jpg" },
       { "id": "2", "label": "Steel Hammer", "position": "x2", "weaponThumbnail": "Goro_Steel_Hammer_Thumbnail.jpg" },
       { "id": "3", "label": "Plate Hammer", "position": "x3", "weaponThumbnail": "Goro_Plate_Hammer_Thumbnail.jpg" },
-      { "id": "4", "label": "Big Bucks Hammer", "position": "x4", "weaponThumbnail": "Goro_Big_Bucks_Hammer_Thumbnail.jpg" },
+      { "id": "4", "label": "Big Bucks Hammer", "position": "x4", "weaponThumbnail": "Goro_Big_Bucks_Hammer_Thumbnail.jpg", "abilities": ["big_bucks"] },
       { "id": "5", "label": "Magical Hammer", "position": "x5", "weaponThumbnail": "Goro_Magical_Hammer_Thumbnail.jpg" },
       { "id": "6", "label": "Gaia Hammer", "position": "x6", "weaponThumbnail": "Goro_Gaia_Hammer_Thumbnail.jpg" },
-      { "id": "7", "label": "Trial Hammer", "position": "x7", "weaponThumbnail": "Goro_Trial_Hammer_Thumbnail.jpg" },
+      { "id": "7", "label": "Trial Hammer", "position": "x7", "weaponThumbnail": "Goro_Trial_Hammer_Thumbnail.jpg", "abilities": ["abs_up", "poor"] },
       { "id": "8", "label": "Battle Axe", "position": "x8", "weaponThumbnail": "Goro_Battle_Axe_Thumbnail.jpg" },
       { "id": "9", "label": "Satan's Ax", "position": "x9", "weaponThumbnail": "Goro_Satan's_Ax_Thumbnail.jpg" },
       { "id": "10", "label": "Last Judgment", "position": "x10", "weaponThumbnail": "Goro_Last_Judgment_Thumbnail.jpg" },
@@ -211,7 +211,7 @@
     "nodes": [
       { "id": "start", "label": "Thorn Armlet", "position": "x0", "weaponThumbnail": "Ruby_Thorn_Armlet_Thumbnail.jpg" },
       { "id": "1", "label": "Platinum Ring", "position": "x1", "weaponThumbnail": "Ruby_Platinum_Ring_Thumbnail.jpg" },
-      { "id": "2", "label": "Bandit's Ring", "position": "x2", "weaponThumbnail": "Ruby_Bandit's_Ring_Thumbnail.jpg" },
+      { "id": "2", "label": "Bandit's Ring", "position": "x2", "weaponThumbnail": "Ruby_Bandit's_Ring_Thumbnail.jpg", "abilities": ["steal"] },
       { "id": "3", "label": "Crystal Ring", "position": "x3", "weaponThumbnail": "Ruby_Crystal_Ring_Thumbnail.jpg" },
       { "id": "4", "label": "Pockleful", "position": "x4", "weaponThumbnail": "Ruby_Pockleful_Thumbnail.jpg" },
       { "id": "5", "label": "Fairy's Ring", "position": "x5", "weaponThumbnail": "Ruby_Fairy's_Ring_Thumbnail.jpg" },
@@ -240,7 +240,7 @@
   },
   "Ungaga": {
     "nodes": [
-      { "id": "start", "label": "5 Foot Nail", "position": "x0", "weaponThumbnail": "Ungaga_5_Foot_Nail_Thumbnail.jpg" },
+      { "id": "start", "label": "5 Foot Nail", "position": "x0", "weaponThumbnail": "Ungaga_5_Foot_Nail_Thumbnail.jpg", "abilities": ["critical"] },
       { "id": "1", "label": "Scorpion", "position": "x1", "weaponThumbnail": "Ungaga_Scorpion_Thumbnail.jpg" },
       { "id": "2", "label": "Partisan", "position": "x2", "weaponThumbnail": "Ungaga_Partisan_Thumbnail.jpg" },
       { "id": "3", "label": "Halberd", "position": "x3", "weaponThumbnail": "Ungaga_Halberd_Thumbnail.jpg" },
